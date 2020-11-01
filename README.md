@@ -40,3 +40,4 @@ To learn more about Next.js, take a look at the following resources:
 * Competitions page scraper instead of manually copying competitions
 * Squadron page scraper to read extra pilot data
 * More styling
+
