@@ -9,7 +9,7 @@ export const ranks = {
   Commander: 'cm',
   'Lieutenant Commander': 'lcm',
   Lieutenant: 'lt',
-  'Sub Lieutenant': 'sl',
+  'Sub-Lieutenant': 'sl',
 };
 
 export const rankImages = Object.keys(ranks).reduce((acc, rank) => ({

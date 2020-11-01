@@ -8,22 +8,28 @@ export default function Dates({
   endDate,
   submissionDate,
   to,
+  cc,
   from,
 }) {
   return (
     <Card>
       <p styles={styles.p}>
-        <strong>To:</strong>
-        {` ${to}`}
-
-        <br />
-
         <strong>From:</strong>
         {` ${from}`}
 
         <br />
 
-        <strong>Submitted on:</strong>
+        <strong>To:</strong>
+        {` ${to}`}
+
+        <br />
+
+        <strong>CC:</strong>
+        {` ${cc}`}
+
+        <br />
+
+        <strong>Submitted:</strong>
         {` ${submissionDate}`}
 
         <br />
@@ -37,6 +43,7 @@ export default function Dates({
 
 Dates.propTypes = {
   to: T.string,
+  cc: T.string,
   from: T.string,
   startDate: T.string.isRequired,
   endDate: T.string.isRequired,
@@ -44,6 +51,7 @@ Dates.propTypes = {
 };
 
 Dates.defaultProps = {
-  to: config.com.title,
+  to: config.wc.title,
+  cc: config.com.title,
   from: config.cmdr.title,
 };

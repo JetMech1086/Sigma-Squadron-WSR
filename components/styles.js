@@ -67,7 +67,7 @@ const dd = {
 const card = {
   padding: '1em 0.5em',
   borderBottom: 'solid 1px #666666',
-  maxWidth: '600px',
+  maxWidth: '800px',
   marginLeft: 'auto',
   marginRight: 'auto',
 };
