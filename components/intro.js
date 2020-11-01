@@ -18,7 +18,7 @@ export default function Intro({ children }) {
       >
         <img
           style={{ width: '100%', maxWidth: '190px', float: 'right' }}
-          src="https://tempest-blown-with-the-wind.vercel.app/uniform.png"
+          src="https://tempest-blown-with-the-wind.vercel.app/uniform.jpg"
           alt={`The uniform of ${config.cmdr.name}, #${config.cmdr.pin}`}
         />
       </a>
