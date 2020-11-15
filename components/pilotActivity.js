@@ -1,6 +1,7 @@
 import T from 'prop-types';
 import { omit } from 'lodash/object';
 import { rankImages, ranks } from './ranks';
+import Link from './link';
 import MedalCase from './medalCase';
 import activityItem from './activityItem';
 import styles from './styles';
@@ -9,8 +10,6 @@ export default function PilotActivity({
   pin,
   name,
   rank,
-  flight,
-  flightPosition,
   activity,
   communication,
   flightActivity,
@@ -24,16 +23,16 @@ export default function PilotActivity({
     <div>
       <RankImage />
 
-      <a
+      <Link
         href={`https://tc.emperorshammer.org/record.php?pin=${pin}&type=profile`}
         target="_blank"
         rel="noreferrer"
-        style={styles.a}
+        style={{ position: 'relative', bottom: '7px' }}
       >
         <strong style={styles.h4}>
-          {`${flight}-${flightPosition} ${ranks[rank].toUpperCase()} ${name}`}
+          {`${ranks[rank].toUpperCase()} ${name}`}
         </strong>
-      </a>
+      </Link>
 
       <dl style={{ marginTop: '0', marginBottom: '1em' }}>
         <dt style={styles.dt}>Communication:</dt>

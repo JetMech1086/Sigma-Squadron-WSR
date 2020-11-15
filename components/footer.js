@@ -1,5 +1,6 @@
 import T from 'prop-types';
 import Card from './card';
+import Link from './link';
 import styles from './styles';
 import config from '../config';
 
@@ -33,14 +34,13 @@ export default function Footer({ children }) {
       <ul>
         {links.map(({ href, title }) => (
           <li key={href}>
-            <a
+            <Link
               href={href}
               target="_blank"
               rel="noreferrer"
-              style={styles.a}
             >
               {title}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

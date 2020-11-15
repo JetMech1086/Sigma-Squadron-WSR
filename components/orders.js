@@ -1,6 +1,8 @@
 import T from 'prop-types';
 import Card from './card';
+import Link from './link';
 import styles from './styles';
+import config from '../config';
 
 export default function Orders({ missions, children }) {
   return (
@@ -9,6 +11,14 @@ export default function Orders({ missions, children }) {
         Squadron Orders
       </h5>
 
+      <img
+        alt={`${config.squadron} squadron patch`}
+        src={config.squadronPatch.url}
+        height={config.squadronPatch.height}
+        width={config.squadronPatch.width}
+        style={{ float: 'right' }}
+      />
+
       {children}
 
       <div style={{ ...styles.p, marginTop: '1em' }}>
@@ -16,14 +26,13 @@ export default function Orders({ missions, children }) {
         <ul>
           {missions.map((m) => (
             <li key={m.id}>
-              <a
+              <Link
                 href={`https://tc.emperorshammer.org/download.php?id=${m.id}&type=info`}
                 target="_blank"
                 rel="noreferrer"
-                style={styles.a}
               >
                 {m.name}
-              </a>
+              </Link>
               {` - ${m.title}`}
             </li>
           ))}

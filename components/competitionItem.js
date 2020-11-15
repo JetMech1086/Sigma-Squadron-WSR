@@ -1,4 +1,5 @@
 import T from 'prop-types';
+import Link from './link';
 import styles from './styles';
 
 export default function CompetitionItem({
@@ -17,19 +18,18 @@ export default function CompetitionItem({
         paddingBottom: '0.5em',
       }}
     >
-      <a
+      <Link
         href={`https://tc.emperorshammer.org/competitions.php?id=${id}`}
         target="_blank"
         rel="noreferrer"
         style={{
-          ...styles.a,
           ...(highlight ? styles.highlightedLink : {}),
         }}
       >
         <strong>{name}</strong>
-      </a>
+      </Link>
 
-      { ` runs until ${ends} for the ${units}.`}
+      { ` until ${ends} for the ${units}.`}
 
       {notes ? <p>{notes}</p> : null}
     </div>
@@ -42,8 +42,10 @@ CompetitionItem.propTypes = {
   ends: T.string.isRequired,
   units: T.string.isRequired,
   highlight: T.bool,
+  notes: T.string,
 };
 
 CompetitionItem.defaultProps = {
   highlight: false,
+  notes: null,
 };

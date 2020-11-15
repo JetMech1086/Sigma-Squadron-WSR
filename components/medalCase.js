@@ -1,5 +1,5 @@
 import T from 'prop-types';
-import { medals, medalImages } from './medals';
+import { medalImages } from './medals';
 
 export default function MedalCase({ medals: awardedMedals }) {
   const string = Object.keys(awardedMedals).map((medal) => (
@@ -18,8 +18,9 @@ export default function MedalCase({ medals: awardedMedals }) {
     <div>
       <strong>{'Medals Awarded: '}</strong>
       {string.join('; ')}
-      <br />
-      {medalImageList}
+      <div style={{ marginTop: '10px' }}>
+        {medalImageList}
+      </div>
     </div>
   );
 }

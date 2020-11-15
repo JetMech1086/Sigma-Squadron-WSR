@@ -30,4 +30,17 @@ export default {
     title: 'HA Anahorn Dempsey',
     pin: 12945,
   },
+  flights: [{
+    name: 'Storm Knights',
+    motto: 'With this lance I judge, for he that dies pays all debts',
+    ship: 5,
+  }, {
+    name: 'Heralds of Maelstrom',
+    motto: 'The brightest thunderbolt is elicted from the darkest storm',
+    ship: 31,
+  }, {
+    name: 'Chaos Crew',
+    motto: 'You\'ll see the lightning but will be dead before the thunder',
+    ship: 31,
+  }],
 };

@@ -1,27 +1,31 @@
+import { Fragment } from 'react';
 import T from 'prop-types';
 import Card from './card';
 import PilotActivity from './pilotActivity';
-import styles from './styles';
-import config from '../config';
+import FlightInfo from './flightInfo';
 
 /* eslint react/jsx-props-no-spreading: 0 */
 
 export default function Activity({ activity }) {
+  let previousFlight = 0;
+
   return (
     <Card>
-      <h5 style={styles.h5}>
-        Squadron Activity
-      </h5>
+      {/* flight info here as part of the map, above the first person from each flight */}
 
-      <img
-        alt={`${config.squadron} squadron patch`}
-        src={config.squadronPatch.url}
-        height={config.squadronPatch.height}
-        width={config.squadronPatch.width}
-        style={{ float: 'right' }}
-      />
+      {activity.map((a) => {
+        const currentFlightIndex = previousFlight;
+        previousFlight = a.flight;
 
-      { activity.map((a) => <PilotActivity {...a} key={a.pin} />)}
+        return (
+          <Fragment key={a.pin}>
+            { a.flight !== currentFlightIndex && currentFlightIndex > 0 && <Card />}
+            { a.flight !== currentFlightIndex && <FlightInfo flight={currentFlightIndex + 1} />}
+
+            <PilotActivity {...a} key={a.pin} />
+          </Fragment>
+        );
+      })}
     </Card>
   );
 }

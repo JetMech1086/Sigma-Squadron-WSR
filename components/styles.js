@@ -50,7 +50,7 @@ const p = {
 };
 
 const a = {
-  color: '#0000ff',
+  color: '#0095ff',
 };
 
 const dt = {
@@ -67,18 +67,18 @@ const dd = {
 const card = {
   padding: '1em 0.5em',
   borderBottom: 'solid 1px #666666',
-  maxWidth: '800px',
+  maxWidth: '600px',
   marginLeft: 'auto',
   marginRight: 'auto',
 };
 
 const highlighted = {
-  backgroundColor: '#000099',
+  backgroundColor: '#004c83',
   padding: '0.5em',
 };
 
 const highlightedLink = {
-  color: '#FFFF00',
+  color: '#f49553',
 };
 
 const rankBadge = {

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from './link';
 import styles from './styles';
 
 export default {
@@ -48,7 +49,7 @@ export default {
 
   NEW_FCHG: (fchgRatings) => (
     <React.Fragment key="NEW_FCHG">
-      <dt style={styles.dt}>New Combat Rating:</dt>
+      <dt style={styles.dt}>New FCHG Rating:</dt>
       <dd style={styles.dd}>
         {fchgRatings.map(({ fchg }) => (
           fchg
@@ -74,9 +75,9 @@ export default {
       <dd style={styles.dd}>
         {competitions.map(({ competitionId, activityString }) => (
           <>
-            <a href={`https://tc.emperorshammer.org/competitions.php?id=${competitionId}`} key={competitionId}>
+            <Link href={`https://tc.emperorshammer.org/competitions.php?id=${competitionId}`} key={competitionId}>
               {activityString}
-            </a>
+            </Link>
             {' '}
           </>
         ))}

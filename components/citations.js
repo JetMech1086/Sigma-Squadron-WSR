@@ -1,5 +1,6 @@
 import T from 'prop-types';
 import Card from './card';
+import Link from './link';
 import styles from './styles';
 import config from '../config';
 
@@ -17,14 +18,13 @@ export default function Citations({ citations, citationsChange, children }) {
       { children }
 
       <p style={styles.p}>
-        <a
+        <Link
           href={`https://tc.emperorshammer.org/battleboard.php?sqn=${config.squadronId}`}
           target="_blank"
           rel="noreferrer"
-          style={styles.a}
         >
           View Squadron Battleboard
-        </a>
+        </Link>
       </p>
     </Card>
   );
