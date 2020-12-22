@@ -7,7 +7,7 @@ import activityItem from './activityItem';
 import styles from './styles';
 
 export default function PilotActivity({
-  pin,
+  PIN,
   name,
   rank,
   activity,
@@ -16,6 +16,7 @@ export default function PilotActivity({
   otherActivity,
   notes,
 }) {
+  console.log(PIN, notes);
   const RankImage = rankImages[rank];
   const { MEDALS_AWARDED: awardedMedals } = activity;
 
@@ -24,7 +25,7 @@ export default function PilotActivity({
       <RankImage />
 
       <Link
-        href={`https://tc.emperorshammer.org/record.php?pin=${pin}&type=profile`}
+        href={`https://tc.emperorshammer.org/record.php?pin=${PIN}&type=profile`}
         target="_blank"
         rel="noreferrer"
         style={{ position: 'relative', bottom: '7px' }}
@@ -74,10 +75,8 @@ export default function PilotActivity({
 }
 
 PilotActivity.propTypes = {
-  pin: T.string.isRequired,
+  PIN: T.number.isRequired,
   name: T.string.isRequired,
-  flight: T.number.isRequired,
-  flightPosition: T.number.isRequired,
   rank: T.oneOf(Object.keys(ranks)).isRequired,
   activity: T.any.isRequired,
   flightActivity: T.string,

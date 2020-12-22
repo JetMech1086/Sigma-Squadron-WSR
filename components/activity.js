@@ -18,11 +18,11 @@ export default function Activity({ activity }) {
         previousFlight = a.flight;
 
         return (
-          <Fragment key={a.pin}>
+          <Fragment key={a.PIN}>
             { a.flight !== currentFlightIndex && currentFlightIndex > 0 && <Card />}
             { a.flight !== currentFlightIndex && <FlightInfo flight={currentFlightIndex + 1} />}
 
-            <PilotActivity {...a} key={a.pin} />
+            <PilotActivity {...a} key={a.PIN} />
           </Fragment>
         );
       })}
