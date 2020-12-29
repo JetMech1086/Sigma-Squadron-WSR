@@ -14,10 +14,10 @@ import Link from '../../components/link';
 import config from '../../config';
 import loadActivityData from '../../src/loadSquadronActivityData';
 
-const reportNumber = 23;
-const startDate = '2020-12-06';
-const endDate = '2020-12-19';
-const submissionDate = '2020-12-20';
+const reportNumber = 24;
+const startDate = '2020-12-20';
+const endDate = '2020-12-26';
+const submissionDate = '2020-12-29';
 
 const orders = [{
   name: 'TIE-Free 92',
@@ -48,12 +48,36 @@ const competitions = [{
   notes: 'Choose any of the art in Tempests\' WSRs, color it, and email it to Silwar. Awards monthly.',
   highlight: true,
 }, {
-  id: '3214',
-  name: 'Where Oh Where Has The Commodore Gone?',
-  ends: '2020-12-20',
-  units: 'ISD-II Challenge',
-  notes: 'Write a fiction of at least one page involving units of the ISD Challenge locating and retrieving our erstwhile Commodore.',
+  id: '3221',
+  name: 'Dempsey\'s Lascivious Lockdown Lunacy',
+  ends: '2020-12-31',
+  units: 'Entire TC',
+  notes: '50 images to explain; ISs for everyone who scores high enough',
   highlight: true,
+}, {
+  id: '3222',
+  name: 'Trivia Grand Tour: Holiday Special',
+  ends: '2021-01-03',
+  units: 'Entire tC',
+  notes: 'Trivia Grand Tour bonus round',
+  highlight: true,
+}, {
+  id: '3220',
+  name: 'Eagle Patch Competition',
+  ends: '2020-01-04',
+  units: 'Entire TC',
+  notes: 'Create a new patch for Eagle Squadron',
+}, {
+  id: '3219',
+  name: 'Pimp my TIE',
+  units: 'entire TC',
+  notes: 'Create a graphic externall and internally of any TIE fighter',
+}, {
+  id: '3228',
+  name: 'Warrior Banner',
+  ends: '2021-01-31',
+  units: 'Entire TC',
+  notes: 'Design a new banner for the Warrior.',
 }, {
   id: '3209',
   name: 'Trivia for the Challenged',
@@ -168,68 +192,58 @@ const ACTIVITY = {
   // Silwar
   12630: {
     communication: 'Email, Discord',
-    flightActivity: 'Star Wars Squadrons PvP; hosted PvP shootout; XWA and TIE battles',
-    otherActivity: '',
+    flightActivity: 'Star Wars Squadrons PvP; hosted PvP shootout (19 wins!)',
+    otherActivity: 'Working on a 3v3 EHTC Squadrons League',
     notes: '',
-  },
-  // LT Synapse
-  55921: {
-    communication: 'None',
-    notes: 'LT Synapse, please check in!',
   },
   // Neko
   55783: {
     communication: 'Personal check-ins',
     flightActivity: 'Squadrons PvP',
-    notes: 'LCM Neko and I flew some training matches and live engagements this week, and plan to do more next.',
+    notes: 'Lots of Squadrons wins this past shootout. Nice flying!',
   },
   // Iam
   55785: {
     communication: 'Personal check-ins',
     flightActivity: 'Squadrons PvP',
-    notes: 'LT Iam Thinking and I flew some training matches and live engagements this week, and plan to do more next.',
+    notes: 'Additional Squadrons wins this past weekend, as Iam gets more comfortable with the TIE Reaper.',
   },
   // Marek
   55825: {
     communication: 'None',
     flightActivity: '',
-    notes: 'On leave the past couple of weeks.',
+    notes: 'On leave.',
   },
   // EchoVII
   55922: {
     communication: 'Discord',
     flightActivity: 'Squadrons PVP',
-    notes: 'Great flying this week, live and in skirmishes against other TC pilots.',
+    notes: 'More great flying, and potentially a new recruit!',
   },
   // Richlet
   4607: {
     communication: 'Discord',
-    flightActivity: 'Squadrons PvP together',
-    notes: 'Great flying this week, live and in skirmishes against other TC pilots.',
+    flightActivity: 'Squadrons PvP',
+    notes: 'Getting more comfortable with Squadrons and earning several wins!',
   },
   // Kalve
   1968: {
-    communication: 'Discord',
+    communication: '',
     flightActivity: '',
-    notes: '',
+    notes: 'A quiet week for CPT Kalve.',
   },
 
   // Phalk
   6874: {
     communication: 'Email, Discord',
-    flightActivity: 'XWA, and TIE missions',
-    notes: 'Fantastic flying and reports, as usual.',
+    flightActivity: 'XWA missions',
+    notes: 'I see you\'re working your way through more XWA. Nice work.',
   },
   // Rhygaar
   55873: {
     communication: 'Discord',
-    flightActivity: 'Squadrons PvP, fleet battles',
-    notes: '',
-  },
-  // Nindo
-  55916: {
-    communication: 'None',
-    notes: 'On the list for reserves transfer.',
+    flightActivity: '',
+    notes: 'Looking forward to flying with you again.',
   },
 };
 
@@ -262,20 +276,23 @@ export default function Report({ activityData }) {
 
       <Intro showUniform={false}>
         <p>
-          Tempest is the first squadron on the Challenge to receive MSE medals, no doubt because
-          we have so many to receive. Everything from a Silver Star through Imperial Security Medal
-          has been given out to nearly every pilot, yet again - an expected but worthy achievement
-          for the top squadron in the Emperor's Hammer TIE Corps.
+          This week saw an extremely active TIE Corps PvP Shootout, with 21 games played on
+          Saturday (and more unofficial games later on.) CPT Genie and I are also working on a
+          3v3 Squadrons League, to be announced soon. In wider TIE Corps news, GN Hav Antiel is
+          stepping down from his role as Rho Squadron CMDR, to be replaced by CM acetiepilot.
+          Zekk Terrik has been named as the new Warrior COM and will take up his role on January 1,
+          to be replaced by Robert Hogan. Lastly, the Challenge's own COL Stryker has been named
+          WARD along with CPT Genie.
         </p>
 
         <img
-          src="https://tempest-blown-with-the-wind.vercel.app/art/neko-space-battle.png"
+          src="/art/neko-deck-the-halls.jpg"
           width="100%"
-          alt="Battlegroup III Protects the First Death Star"
+          alt="Tempest Squadron decks the halls"
         />
 
         <p>
-          <em>{'"Battlegroup III Protects the First Death Star", art by LCM Neko. '}</em>
+          <em>{'"Tempest Squadron decks the halls", art by LCM Neko. '}</em>
           {'Don\'t forget to take part in the coloring competition, '}
           <Link href="https://tc.emperorshammer.org/competitions.php?id=3216">
             "Stay In the Lines"!
@@ -283,17 +300,8 @@ export default function Report({ activityData }) {
         </p>
 
         <p>
-          This week, we see a few transfers: LT Sat Nav heads to the reserves while he completes
-          his Imperial University training; MAJ Hermann defects to an older, uglier ship; and one
-          of the TIE Corps' newest recruits, LT EchoVII, joins as Tempest 2-2. LT EchoVII and I
-          have been spending time in the simulator and she's shaping up to be a promising pilot.
-          Just today, LT EchoVII, LCM Richlet, and I flew skirmishes against the new Eagle Squadron
-          and had a jolly old time.
-        </p>
-
-        <p>
-          Eagle Squadron has opened up on the Challenge to provide a home for pilots who wish to
-          join in infiltration and fly inferior craft. Best of luck to those brave souls.
+          Two more pilots left for the reserves this week: LT Synapse and LT Nindo Ardinn. I wish
+          them well in their endeavors and hope to see them again in the future.
         </p>
 
         <p>
@@ -325,7 +333,7 @@ export default function Report({ activityData }) {
       <Orders missions={orders}>
         <p>
           This is the
-          <strong>{' first '}</strong>
+          <strong>{' second '}</strong>
           week these orders are active. You will have until January 3 to finish these
           missions and challenges for the high score competition.
         </p>
@@ -342,9 +350,11 @@ export default function Report({ activityData }) {
       <Competitions competitions={competitions} />
 
       <Closing>
-        We're sad to see MAJ Hermann go, but wish him best in his endeavors. THe Warrior will
-        certainly need all the help they can get for next RtF, now that the Challenge is a fully
-        armed and operational battlegroup.
+        While our squadron has lost a few pilots over the last few weeks, we've also increased our
+        activity through numerous Squadrons matches as well as many singleplayer battles completed.
+        Reserves transfers are a necessary part of the lifecycle of a squadron and allows pilots to
+        rejoin when they're ready - and we'll have a spot when they do. That said, I believe LT
+        EchoVII may have a new recruit soon...
       </Closing>
 
       <Footer />

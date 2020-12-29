@@ -1,5 +1,5 @@
-import T from 'prop-types';
 import { omit } from 'lodash/object';
+import T from 'prop-types';
 import { rankImages, ranks } from './ranks';
 import Link from './link';
 import MedalCase from './medalCase';
@@ -16,7 +16,6 @@ export default function PilotActivity({
   otherActivity,
   notes,
 }) {
-  console.log(PIN, notes);
   const RankImage = rankImages[rank];
   const { MEDALS_AWARDED: awardedMedals } = activity;
 
