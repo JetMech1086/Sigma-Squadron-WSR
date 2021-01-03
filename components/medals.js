@@ -1,6 +1,7 @@
 import styles from './styles';
 
 export const medals = {
+  DFC: 'dfc',
   IS_BR: 'is-br',
   IS_BW: 'is-bw',
   IS_SR: 'is-sr',

@@ -8,10 +8,13 @@ export default function MedalCase({ medals: awardedMedals }) {
 
   const medalImageList = Object.keys(awardedMedals).map((medal) => {
     const MedalImage = medalImages[medal.toLowerCase()];
+    if (MedalImage) {
+      return (
+        <MedalImage key={medal} />
+      );
+    }
 
-    return (
-      <MedalImage key={medal} />
-    );
+    return null;
   });
 
   return (
