@@ -15,12 +15,16 @@ export default function Activity({ activity }) {
 
       {activity.map((a) => {
         const currentFlightIndex = previousFlight;
-        previousFlight = a.flight;
+        previousFlight = (((a.sqnSlot - 1)/4) >> 0) + 1;
 
         return (
           <Fragment key={a.PIN}>
-            { a.flight !== currentFlightIndex && currentFlightIndex > 0 && <Card />}
-            { a.flight !== currentFlightIndex && <FlightInfo flight={currentFlightIndex + 1} />}
+            { previousFlight !== currentFlightIndex && currentFlightIndex > 0 && <Card />}
+            {
+              previousFlight !== currentFlightIndex && (
+                <FlightInfo flight={currentFlightIndex + 1} />
+              )
+            }
 
             <PilotActivity {...a} key={a.PIN} />
           </Fragment>
