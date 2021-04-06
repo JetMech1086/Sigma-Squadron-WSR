@@ -36,7 +36,7 @@ export default {
     ship: 5,
   }, {
     name: 'Heralds of Maelstrom',
-    motto: 'The brightest thunderbolt is elicted from the darkest storm',
+    motto: 'The brightest thunderbolt is elicited from the darkest storm',
     ship: 31,
   }, {
     name: 'Chaos Crew',
