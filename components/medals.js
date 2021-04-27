@@ -2,12 +2,15 @@ import styles from './styles';
 
 export const medals = {
   DFC: 'dfc',
-  IS_BR: 'is-br',
+  IS_CR: 'is-r',
+  IS_CW: 'is-cw',
+  IS_BR: 'is-r',
   IS_BW: 'is-bw',
-  IS_SR: 'is-sr',
+  IS_SR: 'is-r',
   IS_SW: 'is-sw',
-  IS_GR: 'is-gr',
+  IS_GR: 'is-r',
   IS_GW: 'is-gw',
+  IS_PR: 'is-r',
   IS_PW: 'is-pw',
   LOC: 'loc',
   LOS: 'los',
@@ -15,6 +18,7 @@ export const medals = {
   MOC_SOC: 'moc-soc',
   COB: 'cob',
   MOI: 'moi',
+  IAR: 'iar',
   ISM: 'ism',
   IC: 'ic',
   PC: 'pc',
@@ -24,6 +28,8 @@ export const medals = {
   OOR: 'oor',
   GOE: 'goe',
   MOH: 'moh',
+  TUA: 'tua',
+  MUA: 'mua',
 };
 
 export const medalImages = Object.values(medals).reduce((acc, medal) => ({
