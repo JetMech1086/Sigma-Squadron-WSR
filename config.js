@@ -39,7 +39,7 @@ export default {
     motto: 'The brightest thunderbolt is elicited from the darkest storm',
     ship: 31,
   }, {
-    name: 'Chaos Crew',
+    name: 'Paladins of Fulmination',
     motto: 'You\'ll see the lightning but will be dead before the thunder',
     ship: 31,
   }],

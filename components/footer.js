@@ -31,6 +31,12 @@ export default function Footer({ children }) {
         Resources
       </h5>
 
+      <img
+        style={{ width: '182px', float: 'right' }}
+        src="https://tempest-blown-with-the-wind.vercel.app/tc.png"
+        alt="The TIE Corps logo"
+      />
+
       <ul>
         {links.map(({ href, title }) => (
           <li key={href}>

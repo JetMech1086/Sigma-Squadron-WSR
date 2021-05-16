@@ -2,7 +2,6 @@ import T from 'prop-types';
 import Card from './card';
 import Link from './link';
 import styles from './styles';
-import config from '../config';
 
 export default function Orders({ missions, children }) {
   return (
@@ -10,14 +9,6 @@ export default function Orders({ missions, children }) {
       <h5 style={styles.h5}>
         Squadron Orders
       </h5>
-
-      <img
-        alt={`${config.squadron} squadron patch`}
-        src={config.squadronPatch.url}
-        height={config.squadronPatch.height}
-        width={config.squadronPatch.width}
-        style={{ float: 'right' }}
-      />
 
       {children}
 
