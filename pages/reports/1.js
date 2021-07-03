@@ -15,19 +15,20 @@ import Link from '../../components/link';
 import config from '../../config';
 import loadActivityData from '../../src/loadSquadronActivityData';
 
-const reportNumber = 37;
-const startDate = '2021-04-27';
-const endDate = '2021-05-15';
-const submissionDate = '2021-05-16';
+const reportNumber = 1;
+const startDate = '2021-06-26';
+const endDate = '2021-07-04';
+const submissionDate = '2021-07-04';
 
 const citations = [
   'TIE-TC 12',
   'TIE-TC 76',
+  'TIE-TC 168',
   'XWA-TC 8',
   'XWA-TC 22',
 ];
 
-const citationsChange = '+2';
+const citationsChange = '+1';
 
 const orders = [{
   name: 'TIE-TC 1',
@@ -70,11 +71,12 @@ const competitions = [{
   notes: 'LCM Wreckage is hosting a 1v1 tournament for Tempest pilots',
   highlight: true,
 }, {
-  id: '3285',
-  name: 'May COO Objective Scramble: May The Force Be With You',
-  ends: '2021-05-31',
-  units: 'Entire TC',
-  notes: 'Pairs of pilots will team up; the pair with the most LoCs and LoSs together wins.',
+  id: '32389',
+  name: 'Challenge Championship League',
+  ends: '2021-08-08',
+  units: 'ISD-II Challenge',
+  notes: 'A 3v3 fleet battles league for pilots of the Challenge',
+  highlight: true,
 }, {
   id: '3271',
   name: 'Inferno Signal Scramble',
@@ -134,11 +136,12 @@ const competitions = [{
   units: 'Entire TC',
 }];
 
+// TODO confirm
 const ACTIVITY = {
   // Silwar
   12630: {
     communication: 'Email, Discord',
-    flightActivity: 'XWA PvE; Squadrons PvP and PvE; Cadet Cup; Tempest Raid Nights',
+    flightActivity: 'Star Conflict PvE; Squadrons PvP and PvE; Cadet Cup training; Tempest Raid Nights; Tempest King of the Mountain',
     otherActivity: '',
     notes: '',
   },
@@ -154,79 +157,79 @@ const ACTIVITY = {
   // Neko
   55783: {
     communication: 'Personal check-ins',
-    flightActivity: '',
+    flightActivity: 'TIE missions; Squadrons PvE and PvP; Tempest King of the Mountain',
     otherActivity: '',
-    notes: 'Busy in the Imperial University.',
+    notes: '',
   },
 
   // Iam
   55785: {
     communication: 'Personal check-ins',
-    flightActivity: 'XWA PvE',
-    notes: 'Flew some XWA training missions with Silwar.',
+    flightActivity: 'TIE missions',
+    notes: '',
   },
 
   // Richlet
   4607: {
     communication: 'Discord, Email',
-    flightActivity: 'Cadet Cup; Squadrons PvP; Tempest Raid Nights',
+    flightActivity: 'Squadrons PvP; Tempest Raid Nights; Tempest King of the Mountain',
     otherActivity: '',
-    notes: 'An IS-SW for joining us in the Cadet Cup',
+    notes: '',
   },
 
   // EchoVII
   55922: {
     communication: 'Discord',
-    flightActivity: 'Squadrons PvP',
+    flightActivity: 'Squadrons PvP and PvE; Tempest King of the Mountain; Tempest Raid Nights',
     otherActivty: '',
-    notes: 'Earned an IS-BR for comissioning Tempest\'s theme song, which she wrote herself.',
+    notes: '',
   },
 
   // Wreckage
   55962: {
     communication: 'Discord',
-    flightActivity: 'Cadet Cup; Squadrons PvP and PvE; Tempest Raid Nights',
+    flightActivity: 'Cadet Cup; Squadrons PvP and PvE; Tempest Raid Nights; XvT and TIE battles; Tempest King of the Mountain',
     otherActivity: '',
-    notes: 'Several medals for the LCM; an IS-SW for joining us in the Cadet Cup and an IS-GW for taking 1st place in the April COO Objective Scramble; an IAR for helping with the podcast and another for fighting in Twin Suns; and an IS-BR for winning Dempsey\'s Weekly Screensots. Nice work!',
+    notes: '',
   },
 
   // Kalve
   1968: {
     communication: 'Discord',
-    flightActivity: 'Squadrons PvE and PvP',
+    flightActivity: 'Star Conflict PvP',
     otherActivity: '',
-    notes: 'A Silver Star for being a principal member of the team that created the first logo that the TIE Corps can truly call its own. Congratulations!',
+    notes: '',
   },
 
   // Phalk
   6874: {
     communication: 'Discord, Email',
-    flightActivity: 'TCiB battles; BoP and TIE missions.',
+    flightActivity: 'TCiB battles; XvT and TIE missions; XWA PvP and PvE; Tempest King of the Mountain',
     otherActivity: '',
-    notes: 'Brought us over the line for our 13th ReMob task, with several highly-scoring TIE-free missions.',
+    notes: '',
   },
 
   // Morgoth
   55942: {
     communication: 'Discord',
-    flightActivity: 'Squadrons PvP; TCiB battles',
+    flightActivity: 'Squadrons PvP; TCiB battles; Tempest Raid Nights; TIE missions; Tempest King of the Mountain',
     otherActivity: '',
-    notes: 'An IS-SW for joining us in the Cadet Cup and for taking second place in the April COO Objective Scramble.',
+    notes: '',
   },
 
   // Coldsnacks
   56017: {
     communication: 'Discord',
-    flightActivity: 'Squadrons PvE and PvP; TCiB battles; TIE and XWA',
-    notes: 'Helping the squadron with Fleet Battles and Citations - and getting close to the requirements for LCM!',
+    flightActivity: 'Squadrons PvE and PvP; TCiB battles; TIE and XWA; Tempet Raid Nights; Tempest King of the Mountain',
+    notes: 'Congratulations on your promotion!',
   },
 
   // Honsou
   55973: {
     communication: 'Discord',
-    flightActivity: 'Squadrons PvP',
+    flightActivity: 'Squadrons PvP and PvE; Tempest Raid Nights; Tempest King of the Mountain',
     otherActivity: 'Leading Fleet Battles training for Tempest',
-    notes: 'An IS-SW for helping coach us in the Cadet Cup',
+    notes: '',
   },
 };
 
@@ -259,59 +262,67 @@ export default function Report({ activityData }) {
 
       <Intro showUniform>
         <p>
-          Tempest, unsurprisingly, has furthered its lead in TIE Corps in Battle. We now hold 140
-          points; Lambda is in second with 96, followed by Sin with 71. Last month we had missions
-          flown by LC Phalk Sturm (who took second place in TIE), myself (who took third...), LT
-          Coldsnacks, LCM Morgoth, and LCM Wreckage. The more the better - let's try for a 100
-          point lead! We only have until the end of next month, but it's possible.
+          <em>
+            The young lieutenant wheeled a hand-truck down the hallway of the
+            ISD-II Challenge, causing heads to turn as one wobbly wheel
+            squeaked and a wooden crate jingled like Darth Santa's sleigh.
+            He stopped and pressed a few buttons outside of CMDR Silwar
+            Naiilo's office. "Delivery for you, sir", he spoke into the
+            intercom. "Compliments of the TIE Corps Commander." A few moments
+            went by before the door opened, the slightly red-faced colonel
+            placing a glass bottle underneath his desk and out of sight. "Thank
+            you, you may leave it on my desk." He hid a scowl; he'd signed up
+            to fly TIE Interceptors, not make deliveries to drunk commanders-
+            but reluctantly lifted the heavy crate and set it on the desk with
+            a heavy thud. Silwar signed the manifest, then popped the lid off
+            with a stray carbon chisel. The glint of gold and silver within
+            were the fruits of months of hard work, but before he had the
+            chance to tell the lieutenant about it, he was already out the
+            door.
+          </em>
         </p>
 
         <p>
-          We flew as the "Storm Knights" in the Cadet Cup, our first fleet battles competition.
-          While we didn't win, we learned a lot thanks to LCM Honsou's leadership and advice. We
-          continue to hone our tactics through LCM Wreckage's Tempest Raid Nights as well, which
-          are temporarily Mondays and Wednesdays at 930pm EST. LCM Wreckage also took place in the
-          Twin Suns fleet battles tournament, with a $20,000 prize at stake, fighting against the
-          {'best teams in the world. '}
-          <Link href="https://www.youtube.com/watch?v=hcvQRXrGZ00">
-            The finals are absolutely worth watching!
+          ReMob awards have begun making their way through the fleet. I'm happy
+          to say that out of twelve squadron members, we earned 24 medals -
+          each member of Tempest earning the fleet's first Meritorious Unit
+          Awards as well as an IS-GW each. The tailors are already working on
+          updating our uniforms. Enjoy your well-earned bonus pay.
+        </p>
+
+        <p>
+          CMDR Silwar Naiilo will be on leave from June 2 - June 9. The
+          Squadron's XO, LCM EchoVII, will be in charge while I'm gone. She has
+          the keys to the airlock, so behave. I will have the squadron MSE
+          submitted before I leave.
+        </p>
+
+        <p>
+          The very first Squadrons Week of War has begun - an event almost as
+          old as the Emperor's Hammer, over 13 organizations and more than 110
+          pilots have signed up to fly dogfights. The rules are simple; kills
+          are set to max and the time limit to 10. The Emperor's Hammer is
+          currently in third place out of thirteen - not bad for the first day!
+          {'You can keep up with statistics on the '}
+          <Link href="https://www.battlestats.com/events/view.php?5397">
+            Battlestats website
           </Link>
+          .
         </p>
 
         <p>
-          LCM Wreckage is hosting "Tempest King of the Mountain", a 1v1 Squadrons tournament. It
-          offically started this week, and the first rounds should be completed by May 22. The
-          first round will be:
+          In Tempest King of the Mountain, LCM Wreckage and LCM Honsou are
+          fighting to take the top position of the winner's bracket. LCM
+          Morgoth and LCM Neko will battle to face COL Silwar. The winner
+          of that fight will fly against either CM Richlet or LCM Coldsnacks
+          to determine the winner of the loser's bracket, who will then go
+          on to the final round.
         </p>
 
         <ul>
-          <li>LT Coldsnacks vs LC Phalk Sturm</li>
-          <li>CM Neko vs LCM EchoVII</li>
-          <li>COL Silwar vs LT Akreseus</li>
-          <li>LCM Morgoth vs CM Richlet</li>
-          <li>LCM Honsou and LCM Wreckage have a bye.</li>
-        </ul>
-
-        <p>
-          May TCiB assignments are due May 31:
-        </p>
-
-        <ul>
-          <li>
-            <Link href="https://tc.emperorshammer.org/download.php?id=507&type=info">
-              TIE-TC 168: Project Omega
-            </Link>
-          </li>
-          <li>
-            <Link href="https://tc.emperorshammer.org/download.php?id=1057&type=info">
-              XvT-TC 81: Saving Anna Darksaber
-            </Link>
-          </li>
-          <li>
-            <Link href="https://tc.emperorshammer.org/download.php?id=1156&type=info">
-              XWA-TC 39 - Wing IX: Encryption Error
-            </Link>
-          </li>
+          <li>LCM Wreckage vs LCM Honsou</li>
+          <li>CM Neko vs LCM Morgoth</li>
+          <li>CM Richlet vs LCM Coldsnacks</li>
         </ul>
       </Intro>
 
@@ -333,10 +344,7 @@ export default function Report({ activityData }) {
       />
 
       <Closing>
-        Tempest Squadron is as active as ever, with the help of everyone- whether participating
-        in TCiB or tournaments like the Cadet Cup and Twin suns; volunteering to teach us Fleet
-        Battles techniques; commissioning songs; or simply flying enough to strike fear into the
-        hearts of all who oppose the Empire.
+        TODO we're awesome
       </Closing>
 
       <Footer />

@@ -1,15 +1,15 @@
 export default {
-  reportTitleFormat: (number) => `Blown with the Wind #${number}`,
-  ship: 'ISD-II Challenge',
-  squadron: 'Tempest',
-  squadronId: '45',
+  reportTitleFormat: (number) => `Sin Squadron WSR #${number}`,
+  ship: 'ISD-II Warrior',
+  squadron: 'Sin',
+  squadronId: '64',
   squadronPatch: {
-    url: 'https://tc.emperorshammer.org/images/patches/35528Tempest%20Squadron%20Patch%202020.png',
+    url: 'https://tc.emperorshammer.org/patch.php?id=64',
     height: 128,
     width: 128,
   },
   squadronBanner: {
-    url: 'https://tc.emperorshammer.org/images/banners/35528tempest.jpeg',
+    url: 'https://tc.emperorshammer.org/images/banners/60605sin%20squadron%20-reshaped.jpg',
     height: 384,
     width: 512,
   },
@@ -33,14 +33,14 @@ export default {
   flights: [{
     name: 'Storm Knights',
     motto: 'With this lance I judge, for he that dies pays all debts',
-    ship: 5,
+    ship: 240,
   }, {
     name: 'Heralds of Maelstrom',
     motto: 'The brightest thunderbolt is elicited from the darkest storm',
-    ship: 31,
+    ship: 240,
   }, {
     name: 'Paladins of Fulmination',
     motto: 'You\'ll see the lightning but will be dead before the thunder',
-    ship: 31,
+    ship: 240,
   }],
 };
