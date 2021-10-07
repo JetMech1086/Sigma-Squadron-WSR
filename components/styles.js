@@ -1,4 +1,4 @@
-const white = '#FF0000';
+const white = '#f8f8ff';
 const black = '#000000';
 
 const h1 = {
@@ -23,6 +23,7 @@ const h4 = {
   textAlign: 'center',
   fontSize: 26,
   marginTop: 0,
+  
 };
 
 const h5 = {
@@ -30,6 +31,7 @@ const h5 = {
   fontSize: 24,
   marginTop: 0,
   fontWeight: 'normal',
+  color: '#fec701',
 };
 
 const h6 = {
@@ -50,7 +52,7 @@ const p = {
 };
 
 const a = {
-  color: '#0095ff',
+  color: '#Cf0a2c',
 };
 
 const dt = {
@@ -73,18 +75,23 @@ const card = {
 };
 
 const highlighted = {
-  backgroundColor: '#004c83',
+  backgroundColor: '#Cf0a2c',
   padding: '0.5em',
 };
 
 const highlightedLink = {
-  color: '#f49553',
+  color: '#fec701',
 };
 
 const rankBadge = {
   height: '27px',
   display: 'inline-block',
   paddingRight: '0.5em',
+};
+
+const report = {
+    border: '6px solid #Cf0a2c'
+
 };
 
 export default {
@@ -103,4 +110,5 @@ export default {
   highlighted,
   highlightedLink,
   rankBadge,
+  report,
 };

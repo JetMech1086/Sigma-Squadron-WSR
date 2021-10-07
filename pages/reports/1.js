@@ -21,14 +21,11 @@ const endDate = '2021-07-04';
 const submissionDate = '2021-07-04';
 
 const citations = [
-  'TIE-TC 12',
-  'TIE-TC 76',
-  'TIE-TC 168',
-  'XWA-TC 8',
-  'XWA-TC 22',
+  'XvT-TC 70',
+  
 ];
 
-const citationsChange = '+1';
+const citationsChange ='+0';
 
 const orders = [{
   name: 'TIE-TC 1',
@@ -57,48 +54,23 @@ const orders = [{
 }];
 
 const competitions = [{
-  id: '3269',
-  name: 'Tempest Raid Nights',
-  ends: '2021-06-15',
-  units: 'Tempest Squadron',
-  notes: 'Every week on Monday and Tuesday, Tempest will assemble for both PvE/Co-Op and PvP matches on Star Wars Squadrons.',
-  highlight: true,
-}, {
-  id: '3278',
-  name: 'Tempest King of the Mountain',
+  id: '3231',
+  name: 'Sin Citation Bonanza',
   ends: '2021-06-12',
-  units: 'Tempet Squadron',
-  notes: 'LCM Wreckage is hosting a 1v1 tournament for Tempest pilots',
+  units: 'Sin Squadron',
+  notes: 'I talked to Robert Hogan about this competition and he informed me that interest had been lost. So it was deleted. I will try to see if I can come up with something similar in the future that will spark more interest.',
   highlight: true,
 }, {
-  id: '32389',
-  name: 'Challenge Championship League',
-  ends: '2021-08-08',
-  units: 'ISD-II Challenge',
-  notes: 'A 3v3 fleet battles league for pilots of the Challenge',
-  highlight: true,
-}, {
-  id: '3271',
-  name: 'Inferno Signal Scramble',
-  ends: '2022-01-01',
-  units: 'ISD-II Challenge',
-  notes: 'Fill in the acronyms from random letter combinations; Google Forms link posted to the Challenge Discord channel',
-}, {
-  id: '3274',
-  name: 'The Challenge with Words',
-  ends: '2021-12-31',
-  units: 'Entire TC',
-  notes: 'COL Marenta will generate a word search and post the link.',
+  id: '3286',
+  name: 'Riddles of the Jawa',
+  ends: '2022-12-31',
+  units: 'ISD-II Warrior',
+  notes: 'Every week, RA Zekk will include a new puzzle designed by LT WarperJawa in the Warrior report. The first pilot of Wing II to return a fully correct puzzle to me will receive 5 points, the second will receive 4 points, and the third will receive 3 points.',
 }, {
   id: '3266',
   name: 'Trivia Grand Tour: Season Six',
   ends: '2021-07-26',
   units: 'Entire TC',
-}, {
-  id: '3262',
-  name: 'Trivia for the Challenged 2021 - Season 3',
-  ends: '2021-07-31',
-  units: 'ISD-II Challenge',
 }, {
   id: '3258',
   name: 'TIE Corps in Battle Season Three',
@@ -116,19 +88,19 @@ const competitions = [{
   name: 'MP Ace of the TIE Corps 2021',
   ends: '2021-12-31',
   units: 'Entire TC',
-  notes: 'Pilots earn montlh and yearly medals for the most LoCs earned. Squadrons games not eligible.',
+  notes: 'Pilots earn monthly and yearly medals for the most LoCs earned. Squadrons games not eligible.',
 }, {
   id: '3276',
   name: 'COOP Ace of the TIE Corps 2021',
   ends: '2021-12-31',
   units: 'Entire TC',
-  notes: 'Pilots earn montlh and yearly medals for the most LoSs earned.',
+  notes: 'Pilots earn monthly and yearly medals for the most LoSs earned.',
 }, {
   id: '3240',
   name: 'SP Ace of the TIE Corps 2021',
   ends: '2021-12-31',
   units: 'Entire TC',
-  notes: 'Pilots earn montlh and yearly medals for the most singleplayer missions played.',
+  notes: 'Pilots earn monthly and yearly medals for the most single player missions played.',
 }, {
   id: '3154',
   name: 'The TIE Pilot Podcast',
@@ -138,97 +110,97 @@ const competitions = [{
 
 // TODO confirm
 const ACTIVITY = {
-  // Silwar
-  12630: {
-    communication: 'Email, Discord',
-    flightActivity: 'Star Conflict PvE; Squadrons PvP and PvE; Cadet Cup training; Tempest Raid Nights; Tempest King of the Mountain',
-    otherActivity: '',
-    notes: '',
-  },
-
-  // Akreseus
-  56005: {
-    communication: 'Discord',
-    flightActivity: 'Squadrons PvP',
-    otherActivity: '',
-    notes: 'Another handful of LoCs for LT Akreseus. Start thinking about taking TCCORE for your LCM promotion!',
-  },
-
-  // Neko
-  55783: {
-    communication: 'Personal check-ins',
-    flightActivity: 'TIE missions; Squadrons PvE and PvP; Tempest King of the Mountain',
-    otherActivity: '',
-    notes: '',
-  },
-
-  // Iam
-  55785: {
-    communication: 'Personal check-ins',
-    flightActivity: 'TIE missions',
-    notes: '',
-  },
-
-  // Richlet
-  4607: {
-    communication: 'Discord, Email',
-    flightActivity: 'Squadrons PvP; Tempest Raid Nights; Tempest King of the Mountain',
-    otherActivity: '',
-    notes: '',
-  },
-
-  // EchoVII
-  55922: {
-    communication: 'Discord',
-    flightActivity: 'Squadrons PvP and PvE; Tempest King of the Mountain; Tempest Raid Nights',
-    otherActivty: '',
-    notes: '',
-  },
-
   // Wreckage
   55962: {
-    communication: 'Discord',
-    flightActivity: 'Cadet Cup; Squadrons PvP and PvE; Tempest Raid Nights; XvT and TIE battles; Tempest King of the Mountain',
+    communication: 'Email, Discord',
+    flightActivity: 'Squadrons PvP',
     otherActivity: '',
     notes: '',
   },
 
-  // Kalve
-  1968: {
+  // Coremy Jertese
+  7782: {
     communication: 'Discord',
-    flightActivity: 'Star Conflict PvP',
+    flightActivity: '',
     otherActivity: '',
+    notes: 'Thanks for filling out my questionnaire',
+  },
+
+  // Commander Kazraran
+  56002: {
+    communication: 'Discord',
+    flightActivity: 'PvE Flying',
+    otherActivity: '',
+    notes: 'Nice job on the IU courses',
+  },
+
+  // Earnim Branet
+  11276: {
+    communication: 'None',
+    flightActivity: 'PvE Flying',
     notes: '',
   },
 
-  // Phalk
-  6874: {
-    communication: 'Discord, Email',
-    flightActivity: 'TCiB battles; XvT and TIE missions; XWA PvP and PvE; Tempest King of the Mountain',
+  // Mordechi Wolfe
+  481: {
+    communication: 'Discord',
+    flightActivity: '',
     otherActivity: '',
-    notes: '',
+    notes: 'Thanks for filling out my questionnaire',
   },
 
-  // Morgoth
-  55942: {
+  // Kane Polybius
+  56085: {
     communication: 'Discord',
-    flightActivity: 'Squadrons PvP; TCiB battles; Tempest Raid Nights; TIE missions; Tempest King of the Mountain',
+    flightActivity: '',
+    otherActivty: '',
+    notes: 'Good job on the TCCORE, you will make Lieutenant Commander in no time.',
+  },
+
+  // Favdaukar
+  11336: {
+    communication: 'Discord',
+    flightActivity: '',
     otherActivity: '',
-    notes: '',
+    notes: 'Congrats on your Order of the Vanguard. Good luck on your final exams. We will keep your TIE/SIN ready to go once you finish up.',
   },
 
-  // Coldsnacks
-  56017: {
-    communication: 'Discord',
-    flightActivity: 'Squadrons PvE and PvP; TCiB battles; TIE and XWA; Tempet Raid Nights; Tempest King of the Mountain',
-    notes: 'Congratulations on your promotion!',
+  // Caleb Watson
+  56041: {
+    communication: 'None',
+    flightActivity: '',
+    otherActivity: '',
+    notes: 'Are you around?',
   },
 
-  // Honsou
-  55973: {
+  // SkyShadow
+  6958: {
     communication: 'Discord',
-    flightActivity: 'Squadrons PvP and PvE; Tempest Raid Nights; Tempest King of the Mountain',
-    otherActivity: 'Leading Fleet Battles training for Tempest',
+    flightActivity: 'Star Conflict PvE',
+    otherActivity: '',
+    notes: 'Congrats on the new assignment, and keep killin it in Star Conflict. You are an LoS machine',
+  },
+
+
+
+
+
+
+
+
+  // Robert Hogan
+  55859: {
+    communication: 'Email, Discord',
+    flightActivity: '',
+    otherActivity: 'Leading The Warrior in Imperial Storm',
+    notes: 'Thanks for all your help, you have made my transition to CMDR much easier',
+  },
+
+  // Exar Kit
+  5243: {
+    communication: 'Discord',
+    flightActivity: '',
+    otherActivity: '',
     notes: '',
   },
 };
@@ -261,77 +233,76 @@ export default function Report({ activityData }) {
       />
 
       <Intro showUniform>
+      <center><h4>Prologue</h4></center>
+
         <p>
-          <em>
-            The young lieutenant wheeled a hand-truck down the hallway of the
-            ISD-II Challenge, causing heads to turn as one wobbly wheel
-            squeaked and a wooden crate jingled like Darth Santa's sleigh.
-            He stopped and pressed a few buttons outside of CMDR Silwar
-            Naiilo's office. "Delivery for you, sir", he spoke into the
-            intercom. "Compliments of the TIE Corps Commander." A few moments
-            went by before the door opened, the slightly red-faced colonel
-            placing a glass bottle underneath his desk and out of sight. "Thank
-            you, you may leave it on my desk." He hid a scowl; he'd signed up
-            to fly TIE Interceptors, not make deliveries to drunk commanders-
-            but reluctantly lifted the heavy crate and set it on the desk with
-            a heavy thud. Silwar signed the manifest, then popped the lid off
-            with a stray carbon chisel. The glint of gold and silver within
-            were the fruits of months of hard work, but before he had the
-            chance to tell the lieutenant about it, he was already out the
-            door.
+          <em>         
+          Wreckage fell back in his chair after pouring himself a glass of Sinfire. 
+          A half-drunk bottle had been left on his desk by Zekk Terrik to congratulate 
+          him on becoming the new Sin Squadron Commander. As he took a sip, he thought 
+          about all the events that had just occurred. He enjoyed a lot of success with 
+          Tempest Squadron, but with success comes change. One minute he was toasting to 
+          another triumphant mission on the ISD Challenge, and the next he was stepping off 
+          a shuttle onto the ISD Warrior. He recalled the recent memory of walking down the 
+          new hangar bay and catching a glimpse of his new fearsome-looking TIE Sinister. He 
+          was looking forward to the drink holder and air conditioning that it came with. 
+          Wreckage snapped out of his trance, as he noticed the portraits on the wall of all 
+          the previous Sin Commanders. A lot of great history here. Plif... Earnim... Robert... 
+          He cackled as he came across Zekk Terrik's portrait “Man, does he ever not have a glass 
+          of ale in his hand?” It's going to take a lot of work to live up to all these great 
+          leaders, he thought to himself. But first, I’ll head over to the cantina to buy the 
+          new squad a few rounds. Wreckage downed what was left in his glass, stood up, and reached 
+          into his pocket. He pulled out his previous Commander Silwar Naiilo’s payment card. 
+          Wreckage had swiped it from Silwar when he wasn’t looking while saying his final goodbyes. 
+          Let’s see how many rounds I can buy for the squad before it gets disabled. He smirks, 
+          opens the door of his new office, and makes his way towards the cantina.
           </em>
         </p>
-
+        <center><h4>Squadron Commander's Speech</h4></center>
         <p>
-          ReMob awards have begun making their way through the fleet. I'm happy
-          to say that out of twelve squadron members, we earned 24 medals -
-          each member of Tempest earning the fleet's first Meritorious Unit
-          Awards as well as an IS-GW each. The tailors are already working on
-          updating our uniforms. Enjoy your well-earned bonus pay.
+        Welcome pilots to my first ever report as CMDR of Sin. The legacy of Sin Squadron runs deep, 
+        and I look forward to etching my name in the history books along with the previous legendary 
+        Sin Commanders. Speaking of legendary Sin Commanders, I want to thank Robert Hogan for 
+        the remarkable job he has done with Sin and all the help he has given. I am happy that 
+        he won't be leaving us and decided to transition to Sin 3-3 as a Flight Member. He will have 
+        an important role for us in the future, which includes being Team Captain of The Warrior for 
+        Imperial Storm.
         </p>
 
         <p>
-          CMDR Silwar Naiilo will be on leave from June 2 - June 9. The
-          Squadron's XO, LCM EchoVII, will be in charge while I'm gone. She has
-          the keys to the airlock, so behave. I will have the squadron MSE
-          submitted before I leave.
+        I am honored and looking forward to getting to know and fly next to you all in battle. 
+        We have a fearsome squad here that is primed to leave their mark in competitions to come. 
+        I have a few ideas running through my head already, but mostly I want to hear from you. If 
+        you have any ideas, questions, or concerns feel free to let me know. I want everyone to take 
+        pride in being part of Sin Squadron, not dread it. This all starts with me pushing out enjoyable 
+        activities that you want to complete.
+        </p>
+        <p>One of my first duties as your new squadron commander was looking for a new FL/XO. 
+          After some consideration, I have chosen CM SkyShadow as our squadron's new FL/XO. Make sure
+          you buy him a beer to congratulate him the next time you run into  him
         </p>
 
-        <p>
-          The very first Squadrons Week of War has begun - an event almost as
-          old as the Emperor's Hammer, over 13 organizations and more than 110
-          pilots have signed up to fly dogfights. The rules are simple; kills
-          are set to max and the time limit to 10. The Emperor's Hammer is
-          currently in third place out of thirteen - not bad for the first day!
-          {'You can keep up with statistics on the '}
-          <Link href="https://www.battlestats.com/events/view.php?5397">
-            Battlestats website
-          </Link>
-          .
-        </p>
-
-        <p>
-          In Tempest King of the Mountain, LCM Wreckage and LCM Honsou are
-          fighting to take the top position of the winner's bracket. LCM
-          Morgoth and LCM Neko will battle to face COL Silwar. The winner
-          of that fight will fly against either CM Richlet or LCM Coldsnacks
-          to determine the winner of the loser's bracket, who will then go
-          on to the final round.
-        </p>
-
-        <ul>
-          <li>LCM Wreckage vs LCM Honsou</li>
-          <li>CM Neko vs LCM Morgoth</li>
-          <li>CM Richlet vs LCM Coldsnacks</li>
-        </ul>
       </Intro>
 
       <Orders missions={orders}>
-        <p>
-          Top priority are the TCiB battles; besides those, these are some of the missions we're
-          {' close to earning citations on. Check our status on the '}
-          <Link href="https://tc.emperorshammer.org/battleboard.php?sqn=45">Squadron Battleboard</Link>.
-        </p>
+
+                <center><h3>Squadron News</h3></center>
+      <ul>
+                <li>Congratulations to CM SkyShadow on his new assignment as XO/FL</li><br></br>
+                <li>My first competition for Sin has been submitted. More info to come once it's approved</li><br></br>
+                <li>A new Sin patch is in the works. I took your feedback on the initial version, and hope to have it 
+                  finalized in the coming weeks. It will continue the legacy of Sin having the best patch in the fleet.</li><br></br>
+                <li>Sin Trivia will be returning next month after Trivia Grand Tour: Season Six wraps up</li><br></br>
+                  </ul>
+                <center><h3>Fleet News</h3></center>
+        <ul>
+            	<li>Imperial Storm has begun! Let us help lead the Warrior to victory!</li><br></br>
+				      <li>Season 2 of WoW is in full effect. Organizations from all over the galaxy are facing off in dogfights on Star Wars Squadrons.
+				      If you have not done so yet, you will need to create a pilot profile (use the same name as your EH pilot name) on <a href="https://www.battlestats.com/"><strong>battle stats </strong></a>
+				      and join the EH group. COO is also running an internal competition for WoW, you can find more information on that <a href="https://tc.emperorshammer.org/combat.php?id=162"><strong>here</strong> </a></li><br></br>
+         	  	<li>The sixth edition of the Trivia Grand Tour competition, run by the TCCOM, wraps up this month.</li>
+        </ul>
+
       </Orders>
 
       <Activity activity={activity} />
@@ -344,7 +315,14 @@ export default function Report({ activityData }) {
       />
 
       <Closing>
-        TODO we're awesome
+      You all have made my first week enjoyable and have been very welcoming. 
+      I look forward to serving as your squadron commander. Happy Independence Day 
+      to all those celebrating. Remember if you need anything feel free to DM me 
+      on discord or email me at ehtc.wreckage@gmail.com.
+
+
+      <p>For Sin!</p>
+      <p>CM Wreckage</p>
       </Closing>
 
       <Footer />

@@ -32,7 +32,7 @@ export default function Footer({ children }) {
       </h5>
 
       <img
-        style={{ width: '182px', float: 'right' }}
+        style={{ width: '120px', float: 'right' }}
         src="https://tempest-blown-with-the-wind.vercel.app/tc.png"
         alt="The TIE Corps logo"
       />

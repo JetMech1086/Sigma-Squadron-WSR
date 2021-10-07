@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
       <tbody>
         <tr style={styles.body}>
           <td style={styles.body}>
-            <div style={styles.body}>
+            <div style={styles.report}>
               <Component {...pageProps} />
             </div>
           </td>

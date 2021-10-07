@@ -7,27 +7,14 @@ export default function Orders({ missions, children }) {
   return (
     <Card>
       <h5 style={styles.h5}>
-        Squadron Orders
+        News From Around The Galaxy
       </h5>
 
       {children}
 
       <div style={{ ...styles.p, marginTop: '1em' }}>
-        <strong>Fly:</strong>
-        <ul>
-          {missions.map((m) => (
-            <li key={m.id}>
-              <Link
-                href={`https://tc.emperorshammer.org/download.php?id=${m.id}&type=info`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {m.name}
-              </Link>
-              {` - ${m.title}`}
-            </li>
-          ))}
-        </ul>
+       
+        
       </div>
     </Card>
   );

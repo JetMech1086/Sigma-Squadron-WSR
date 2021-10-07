@@ -14,10 +14,10 @@ export default function Dates({
   return (
     <Card>
       <img
-        src="/tempest-300.png"
+        src="https://tc.emperorshammer.org/patch.php?id=64"
         style={{ float: 'right' }}
-        alt="Tempest Squadron logo, featuring a horse rearing in front of a lightning bolt."
-        width="135"
+        alt="Sin Squadron logo, Red Skul TIE Pilot Hemlmet with wings."
+        width="120"
       />
 
       <p styles={styles.p}>
