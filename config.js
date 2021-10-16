@@ -16,7 +16,7 @@ export default {
   cmdr: {
     intro: 'From The XOs Office',
     name: 'SkyShadow',
-    title: 'CPT SkyShadow',
+    title: 'CPT SkyShadow on behalf of CPT Wreckage',
     pin: 6958,
     email: 'SmTaUcM@GMail.com',
   },

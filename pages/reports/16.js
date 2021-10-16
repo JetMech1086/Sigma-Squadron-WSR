@@ -33,9 +33,9 @@ const citations = [
 const citationsChange ='+2';
 
 const orders = [{
-  name: 'TIE-TC 1',
-  id: 1,
-  title: 'Capture of Zaarin',
+  name: 'TIE-TC 3',
+  id: 3,
+  title: 'New Dimensions',
 }, {
   name: 'TIE-TC 10',
   id: 10,
@@ -121,16 +121,16 @@ const ACTIVITY = {
   // Wreckage
   55962: {
     communication: 'Email, Discord',
-    flightActivity: 'Star Conflict, Battlefront 2, Star Wars Squadrons',
-    otherActivity: 'Trivia Grand Tour',
-    notes: '',
+    flightActivity: 'XWA SP, Star Conflict PvP, Battlefront 2 PvP',
+    otherActivity: 'SP Reviews',
+    notes: 'Hope that you\'re having a great vacation!',
   },
   // Leone123
   56159: {
-    communication: 'Discord',
+    communication: 'None',
     flightActivity: '',
     otherActivity: '',
-    notes: '',
+    notes: 'Don\'t forget to check in regularly on Discord.',
   },
   // Kazraran
   56002: {
@@ -143,14 +143,14 @@ const ACTIVITY = {
   // Earnim Branet
   11276: {
     communication: 'None',
-    flightActivity: '',
-    notes: 'You around?',
+    flightActivity: 'Conflict PvE',
+    notes: 'Nice flying this week!',
   },
 
   // Coremy Jertese
   7782: {
     communication: 'Discord',
-    flightActivity: '',
+    flightActivity: 'Conflict PvE',
     otherActivity: '',
     notes: '',
   },
@@ -161,7 +161,7 @@ const ACTIVITY = {
     communication: 'Discord',
     flightActivity: '',
     otherActivity: 'RTF Fiction Bonus Comp',
-    notes: 'Great piece of fiction, hope there is another.',
+    notes: 'Keep going with the great fiction.',
   },
 
 
@@ -169,15 +169,15 @@ const ACTIVITY = {
   // SkyShadow
   6958: {
     communication: 'Email, Discord',
-    flightActivity: 'Star Conflict PvP and PvE, Star Wars Squadrons',
-    otherActivity: 'IOA Duties, Find The Difference, Trivia Grand Tour, Crossword Challenge, Challenge with Words!',
+    flightActivity: 'Star Conflict PvE and PvP, Battlefront 2 PvE',
+    otherActivity: 'IOA Duties, Trivia Grand Tour, Raise the Flag Bonus Competition #4: Puzzle.',
     notes: 'Trying not to burn the place down while CPT Wreckage is gone...',
   },
 
   // AlexanderK9
   56110: {
     communication: 'Discord',
-    flightActivity: '',
+    flightActivity: 'Star Conflict PvE and PvP',
     otherActivity: '',
     notes: '',
   },
@@ -185,17 +185,17 @@ const ACTIVITY = {
   // Robert Hogan
   55859: {
     communication: 'Discord',
-    flightActivity: 'Battlefront PvP, SC PvE',
-    otherActivity: 'RTF Graphic Submissions',
-    notes: 'You are killing it Rob, keep up the good work.',
+    flightActivity: 'Battlefront PvP, Star Conflict PvE and PvP',
+    otherActivity: '',
+    notes: 'Brilliant flying this week! Keep it up!',
   },
 
   // Exar Kit
   5243: {
     communication: 'Discord',
-    flightActivity: 'Battlefront 2 PvP and PvE',
+    flightActivity: 'Battlefront 2 PvP',
     otherActivity: '',
-    notes: 'Great work this week General',
+    notes: '',
   },
 };
 
@@ -235,6 +235,8 @@ export default function Report({ activityData }) {
 		fantastic work and keep the pressure on. As always, remember that pretty much anything you do can get you points so if you haven't 
 		yet, come join in on the fun. If you see any of the squad online, please don’t hesitate to ask to join and enjoy this competition together. 
         </p>
+		<p>September's MSE medals have been approved and should have arrived in your inboxes. Congrats to all who earned a medal for last month’s 
+		activities.</p>
         <p>CPT Wreckage is on a mini-vacation at Yosemite National Park and will return Monday. Hopefully just in time to enjoy this report. </p>
 
 
@@ -245,6 +247,7 @@ export default function Report({ activityData }) {
                 <center><h3><span style={{ color: "#1F51FF" }}>Squadron News</span></h3></center>
         <ul>
                 <li>17 days into RtF and Sin keeps bouncing back and forth between 4th and 5th place in the top squadrons listings.</li><br></br>
+				<li>September's MSE medals have been approved and sent out to all recipients.</li><br></br>
                 <li>Don't forget to submit your SINGO screenshots whenever you complete a qualifying task.</li><br></br>
                 <li>Easy way to knock out squares on SINGO and get RTF points. Go fly Robert Hogans TIE-Free mission and don't forget to leave a review. <a href="https://tc.emperorshammer.org/download.php?id=1466&type=info"><strong>TIE-Free 299:A Christmas Present for the Infiltrators</strong></a></li><br></br>
         </ul>

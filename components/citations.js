@@ -17,10 +17,15 @@ export default function Citations({ citations, citationsChange, children }) {
       <center><h4><span style={{ color: "#1F51FF" }}>Squadron Orders</span></h4></center>
       <p>The following are citations that we are very close to obtaining. Please make these your priority when completing single player battles.</p>
       <ul>
-        <li>TIE-TC 26</li>
+        <li>TIE-TC 3</li>
+        <li>TIE-TC 7</li>
+        <li>TIE-TC 25</li>
         <li>XVT-TC 1</li>
-        <li>XWA-TC 1</li>
-        <li>XWA-TC 2</li>
+		<li>XVT-TC 23</li>
+		<li>XVT-TC 77</li>
+		<li>XWA-TC 3</li>
+		<li>XWA-TC 4</li>
+		<li>XWA-TC 6</li>
       </ul>
       { children }
 
