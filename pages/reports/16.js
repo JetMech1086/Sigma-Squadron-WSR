@@ -85,12 +85,6 @@ const competitions = [{
   ends: '2021-12-27',
   units: 'Entire TC',
 }, {
-  id: '3324',
-  name: 'Crossword Challenge',
-  ends: '2021-09-30',
-  units: 'Entire TC',
-  notes: 'Every month a new crossword puzzle will be created with a specific theme. Complete the crossword puzzle and email a screenshot to Solohan50@gmail.com.'
-}, {
   id: '3235',
   name: 'COO\'s Star Wars Challenge Episode VII - 2021',
   ends: '2021-12-31',
@@ -135,7 +129,7 @@ const ACTIVITY = {
   // Kazraran
   56002: {
     communication: 'Discord',
-    flightActivity: '',
+    flightActivity: 'Conflict PvE',
     otherActivity: '',
     notes: '',
   },
@@ -274,9 +268,9 @@ export default function Report({ activityData }) {
       />
 
       <Closing>
-      Well done to all who have recieved merit medals for September's MSE and to those who have been awarded IARs!
-	  As always, thank you all for your continuted activity and efforts.<br></br> 
-	  CPT Wreckage's welcome home party will commence in the mess hall on C deck, Monday at 0800. Buy some drinks from project Soverign (And scrtch of a SINGO! square to!). 
+      Well done to all who have received merit medals for September's MSE and to those who have been awarded IARs!
+	  As always, thank you all for your continued activity and efforts.<br></br> 
+	  CPT Wreckage's welcome home party will commence in the mess hall on C deck, Monday at 0800. Buy some drinks from project Sovereign (And scratch of a SINGO! square to!). 
       <p>For Sin!</p>
       <p>CPT SkyShadow</p>
       <i><span style={{ color: "#bb0a1e" }}>"The old ones say we Sinners are descended from the Emperor himself. From the time a Sinner could fly, they were baptized in the fire of combat. 
