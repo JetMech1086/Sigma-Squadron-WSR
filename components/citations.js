@@ -20,7 +20,7 @@ export default function Citations({ citations, citationsChange, children }) {
         <li>TIE-TC 3</li>
         <li>TIE-TC 7</li>
         <li>TIE-TC 25</li>
-        <li>XVT-TC 1</li>
+        <li>XVT-TC 4</li>
 		<li>XVT-TC 23</li>
 		<li>XVT-TC 77</li>
 		<li>XWA-TC 3</li>
