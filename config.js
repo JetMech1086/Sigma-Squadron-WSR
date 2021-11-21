@@ -16,7 +16,7 @@ export default {
   cmdr: {
     intro: 'From The Desk of Wreckage',
     name: 'Wreckage',
-    title: 'CPT Wreckage',
+    title: 'MAJ Wreckage',
     pin: 55962,
     email: 'ehtc.wreckage@gmail.com',
   },
