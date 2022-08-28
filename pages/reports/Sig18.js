@@ -15,10 +15,10 @@ import Link from '../../components/link';
 import config from '../../config';
 import loadActivityData from '../../src/loadSquadronActivityData';
 
-const reportNumber = 16;
-const startDate = '2021-10-11';
-const endDate = '2021-10-17';
-const submissionDate = '2021-10-17';
+const reportNumber = 18;
+const startDate = '2021-10-25';
+const endDate = '2021-10-31';
+const submissionDate = '2021-10-31';
 
 const citations = [
   'XvT-TC 10',
@@ -30,7 +30,7 @@ const citations = [
   'XWA-TC 2', 
 ];
 
-const citationsChange ='+2';
+const citationsChange ='+0';
 
 const orders = [{
   name: 'TIE-TC 3',
@@ -59,13 +59,6 @@ const orders = [{
 }];
 
 const competitions = [{
-  id: '3332',
-  name: 'Raise the Flag Bonus Competition #6: SWS PvP',
-  ends: '2022-10-22',
-  units: 'TIE Corps',
-  notes: 'The goal will be to submit via email to plif346@gmail.com your SWS PvP screenshot with the highest score from a winning match.',
-  highlight: false,
-}, {
   id: '3321',
   name: 'Sinfantry Training',
   ends: '2022-02-05',
@@ -115,36 +108,36 @@ const ACTIVITY = {
   // Wreckage
   55962: {
     communication: 'Email, Discord',
-    flightActivity: 'XWA SP, Star Conflict PvP, Battlefront 2 PvP',
-    otherActivity: 'SP Reviews',
-    notes: 'Hope that you\'re having a great vacation!',
+    flightActivity: 'Battlefront PvP and PvE, Star Conflict PvE',
+    otherActivity: 'Sinfantry Training',
+    notes: '',
   },
   // Leone123
   56159: {
-    communication: 'None',
+    communication: 'Discord',
     flightActivity: '',
     otherActivity: '',
-    notes: 'Don\'t forget to check in regularly on Discord.',
+    notes: '',
   },
   // Kazraran
   56002: {
     communication: 'Discord',
-    flightActivity: 'Conflict PvE',
+    flightActivity: 'XVT Battles',
     otherActivity: '',
-    notes: '',
+    notes: 'Way to knock out those battles, IAR in the mail.',
   },
 
   // Earnim Branet
   11276: {
     communication: 'None',
-    flightActivity: 'Conflict PvE',
-    notes: 'Nice flying this week!',
+    flightActivity: '',
+    notes: '',
   },
 
   // Coremy Jertese
   7782: {
     communication: 'Discord',
-    flightActivity: 'Conflict PvE',
+    flightActivity: '',
     otherActivity: '',
     notes: '',
   },
@@ -154,42 +147,42 @@ const ACTIVITY = {
   56085: {
     communication: 'Discord',
     flightActivity: '',
-    otherActivity: 'RTF Fiction Bonus Comp',
-    notes: 'Keep going with the great fiction.',
+    otherActivity: '',
+    notes: '',
   },
 
 
 
   // SkyShadow
   6958: {
-    communication: 'Email, Discord',
+    communication: 'Discord',
     flightActivity: 'Star Conflict PvE and PvP, Battlefront 2 PvE',
-    otherActivity: 'IOA Duties, Trivia Grand Tour, Raise the Flag Bonus Competition #4: Puzzle.',
-    notes: 'Trying not to burn the place down while CPT Wreckage is gone...',
+    otherActivity: 'IOA Duties, Trivia Grand Tour, Sinfantry Training ',
+    notes: 'Thanks for running Sinfantry Training when I had to leave early.',
   },
 
   // AlexanderK9
   56110: {
     communication: 'Discord',
-    flightActivity: 'Star Conflict PvE and PvP',
+    flightActivity: '',
     otherActivity: '',
     notes: '',
   },
 
   // Robert Hogan
   55859: {
-    communication: 'Discord',
-    flightActivity: 'Battlefront PvP, Star Conflict PvE and PvP',
-    otherActivity: '',
-    notes: 'Brilliant flying this week! Keep it up!',
+    communication: 'Email, Discord',
+    flightActivity: 'Star Conflict PvE',
+    otherActivity: 'Graphics',
+    notes: 'Graphics are looking nice, let me know if there are any submissions you did not get RTF points for',
   },
 
   // Exar Kit
   5243: {
     communication: 'Discord',
-    flightActivity: 'Battlefront 2 PvP',
-    otherActivity: '',
-    notes: '',
+    flightActivity: 'Star Conflict PvE',
+    otherActivity: 'Sinfantry Training',
+    notes: 'Thanks for showing up to Sinfantry Training',
   },
 };
 
@@ -222,16 +215,17 @@ export default function Report({ activityData }) {
 
       <Intro showUniform>
 
-        <center><h4><span style={{ color: "#1F51FF" }}>Executive Officer's Speech</span></h4></center>
+        <center><h4><span style={{ color: "#1F51FF" }}>Squadron Commander's Speech</span></h4></center>
         <p>
-        We are now over half way through RtF 2021 and all is still to play for. It’s always a pleasure to see our community spring to life 
-		and compete and enjoy some Star Wars gaming. We are still fighting for 4th place on the top squadrons board so let's keep up the 
-		fantastic work and keep the pressure on. As always, remember that pretty much anything you do can get you points so if you haven't 
-		yet, come join in on the fun. If you see any of the squad online, please don’t hesitate to ask to join and enjoy this competition together. 
+        Happy Halloween to all those that celebrate. I hope you all get plenty of candy today and have a great day. RTF is down to the last hours and currently Sin is still one of 
+        the top 5 squadrons on the leaderboard, number 5 to be exact. Make sure to get any legions, pilot files, graphics, or fiction submitted before the deadline. I will be away again next
+        week, going to a football and hockey game. SkyShadow will be in command while I am away.
         </p>
-		<p>September's MSE medals have been approved and should have arrived in your inboxes. Congrats to all who earned a medal for last month’s 
-		activities.</p>
-        <p>CPT Wreckage is on a mini-vacation at Yosemite National Park and will return Monday. Hopefully just in time to enjoy this report. </p>
+		    <p>Sinfantry Training had another solid turnout yesterday. I am sorry to those that were in attendance that I had to leave earlier than expected. Mrs. Wreckage was a little 
+        too excited to go to the pumpkin patch and corn maze and wanted to head out sooner than I had expected. I'm glad that you all kept playing once I left. </p>
+        <p>Tomorrow marks the last day to submit any SINGO screenshots that you may have left. So please make sure to get those to me as soon as you can. </p>
+        <p>Lastly, with the month coming to a close that means MSEs will be completed soon. With the crazy month that it's been, and all the activity you all have pushed out, looks 
+        like I am going to be busy. I will try to knock those out as soon as I can. I'm expecting a lot of Merit awards this month for you all. Great job!</p>
 
 
       </Intro>
@@ -240,20 +234,16 @@ export default function Report({ activityData }) {
 
                 <center><h3><span style={{ color: "#1F51FF" }}>Squadron News</span></h3></center>
         <ul>
-                <li>17 days into RtF and Sin keeps bouncing back and forth between 4th and 5th place in the top squadrons listings.</li><br></br>
-				<li>September's MSE medals have been approved and sent out to all recipients.</li><br></br>
-                <li>Don't forget to submit your SINGO screenshots whenever you complete a qualifying task.</li><br></br>
+                <li>Hours left in RTF and we are holding strong as a top 5 squadron</li><br></br>
+                <li>Thanks to those that showed up for Sinfantry Training. Next Sinfantry Training will be December 1st. </li><br></br>
+                <li>SINGO closes tomorrow . Make sure to get those screenshots to me.</li><br></br>
                 <li>Easy way to knock out squares on SINGO and get RTF points. Go fly Robert Hogans TIE-Free mission and don't forget to leave a review. <a href="https://tc.emperorshammer.org/download.php?id=1466&type=info"><strong>TIE-Free 299:A Christmas Present for the Infiltrators</strong></a></li><br></br>
         </ul>
                 <center><h3><span style={{ color: "#1F51FF" }}>Fleet News</span></h3></center>
         <ul>
-            	<li>The Warrior remains 3rd place in RtF.</li><br></br>
+            	<li>The Warrior remains in 3rd place for RtF.</li><br></br>
                 <li>The seventh edition of the Trivia Grand Tour competition, run by the TCCOM, is underway.  </li><br></br>
-				<li>RtF Bonus Comp #6: SWS PvP is live!<br></br><br></br>
-					The Star Wars Squadrons PvP Bonus Comp will run from 0600 GMT on October 15th to 0600 GMT on October 22nd.<br></br><br></br>
-					The goal will be to submit via email to plif346@gmail.com your SWS PvP screenshot with the highest score from a winning match. Ties will be broken by the timestamps on the submissions, earlier submission wins so the clock's ticking! Screenshots must be from matches played through matchmaking, custom matches are not eligible.<br></br><br></br>
-					Please don't send the TCCOM your screenshot until you've made your final attempt. It gets very difficult to keep everything straight when I have multiple submissions from individual participants.<br></br><br></br>
-					The top ten places will be awarded 100, 85, 70, 60, 50, 40, 35, 30, 25, or 20 bonus points respectively for their ships and squadrons. The top six places will earn an IS-GW, IS-SW, IS-SW, IS-BW, IS-BW, or IS-BW respectively.</li><br></br>
+                <li>RTF Bonus Competitions #8, #9, and #10 submission deadlines have been extended to 23:59 GMT on Sunday the 31st.   </li><br></br>
         </ul>
 
       </Orders>
@@ -268,11 +258,11 @@ export default function Report({ activityData }) {
       />
 
       <Closing>
-      Well done to all who have received merit medals for September's MSE and to those who have been awarded IARs!
-	  As always, thank you all for your continued activity and efforts.<br></br> 
-	  CPT Wreckage's welcome home party will commence in the mess hall on C deck, Monday at 0800. Buy some drinks from project Sovereign (And scratch of a SINGO! square to!). 
+      RTF was a blast. Sin Squadron had a solid showing for the event. Last I checked we were 1 of only 2 squadrons to have 100% participation from all of our pilots. 
+      I appreciate all of your efforts and services to the empire. Enjoy your time with me gone next week, and feel free to throw a party while I am gone. You all deserve 
+      it, just charge it to my tab.  
       <p>For Sin!</p>
-      <p>CPT SkyShadow</p>
+      <p>CPT Wreckage</p>
       <i><span style={{ color: "#bb0a1e" }}>"The old ones say we Sinners are descended from the Emperor himself. From the time a Sinner could fly, they were baptized in the fire of combat. 
         Taught never to retreat, never to surrender. Taught that death on the battlefield in service to the Empire was the greatest glory they could achieve."</span></i>
       </Closing>

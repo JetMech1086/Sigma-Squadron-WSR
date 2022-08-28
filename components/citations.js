@@ -10,22 +10,18 @@ export default function Citations({ citations, citationsChange, children }) {
       <h5 style={styles.h5}>
         {`Squadron Citations: ${citations.length} (${citationsChange})`}
       </h5>
-      <p>List of current Sin Squadron citations </p>
+      <p>No current Sigma Squadron citations </p>
       <ul>
         {citations.map((c) => <li key={c}>{c}</li>) }
       </ul>
-      <center><h4><span style={{ color: "#1F51FF" }}>Squadron Orders</span></h4></center>
-      <p>The following are citations that we are very close to obtaining. Please make these your priority when completing single player battles.</p>
+      <center><h4><span style={{ color: "#401562" }}>Squadron Orders</span></h4></center>
+      <p>The following battles are citations that we are very close to obtaining. Please make these your priority when completing single player battles.</p>
       <ul>
-        <li>TIE-TC 3</li>
-        <li>TIE-TC 7</li>
+        <li>TIE-TC 12</li>
+        <li>TIE-TC 24</li>
         <li>TIE-TC 25</li>
-        <li>XVT-TC 4</li>
-		<li>XVT-TC 23</li>
-		<li>XVT-TC 77</li>
-		<li>XWA-TC 3</li>
-		<li>XWA-TC 4</li>
-		<li>XWA-TC 6</li>
+        <li>TIE-TC 142</li>
+
       </ul>
       { children }
 

@@ -12,7 +12,7 @@ export default function FlightInfo({
       <img
         alt={`Flight ${flight} ship`}
         src={`https://tc.emperorshammer.org/images/craft/${flight.ship}.png`}
-        style={{ float: 'right' }}
+        style={{ width: '100%', maxWidth: '220px', float: 'right' }}
       />
 
       <h2>{`Flight ${flightNumber}: ${flight.name}`}</h2>

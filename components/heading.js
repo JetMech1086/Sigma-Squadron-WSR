@@ -24,7 +24,7 @@ export default function Heading({ reportNumber }) {
         </h2>
 
         <img
-          alt="Sin Banner"
+          alt="Sigma Banner"
           style={{ width: '100%' }}
           src={config.squadronBanner.url}
         />

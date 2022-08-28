@@ -31,7 +31,7 @@ const h5 = {
   fontSize: 24,
   marginTop: 0,
   fontWeight: 'normal',
-  color: '#fec701',
+  color: '#Cf0a2c',
 };
 
 const h6 = {
@@ -52,7 +52,7 @@ const p = {
 };
 
 const a = {
-  color: '#Cf0a2c',
+  color: '#FDD537  ',
 };
 
 const dt = {
@@ -75,7 +75,7 @@ const card = {
 };
 
 const highlighted = {
-  backgroundColor: '#Cf0a2c',
+  backgroundColor: '#401562',
   padding: '0.5em',
 };
 
@@ -90,7 +90,7 @@ const rankBadge = {
 };
 
 const report = {
-    border: '6px solid #Cf0a2c'
+    border: '6px solid #401562'
 
 };
 

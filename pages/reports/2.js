@@ -16,108 +16,68 @@ import config from '../../config';
 import loadActivityData from '../../src/loadSquadronActivityData';
 
 const reportNumber = 2;
-const startDate = '2021-07-05';
-const endDate = '2021-07-11';
-const submissionDate = '2021-07-11';
+const startDate = '2022-08-08';
+const endDate = '2022-08-028';
+const submissionDate = '2022-08-28';
 
 const citations = [
-  'XvT-TC 70',
-  
+
 ];
 
 const citationsChange ='+0';
 
-const orders = [{
-  name: 'TIE-TC 1',
-  id: 1,
-  title: 'Capture of Zaarin',
-}, {
-  name: 'TIE-TC 10',
-  id: 10,
-  title: 'Battle for the Death Star',
-}, {
-  name: 'TIE-TC 16',
-  id: 16,
-  title: 'Dacian Downfall',
-}, {
-  name: 'TIE-TC 19',
-  id: 19,
-  title: 'The Tethys Honeymoon',
-}, {
-  name: 'TIE-TC 30',
-  id: 30,
-  title: 'Save the Emperors Archives',
-}, {
-  name: 'TIE-TC 153',
-  id: 390,
-  title: 'Koph Supremacy Project',
-}];
+const orders = [];
 
 const competitions = [{
-  id: '330',
-  name: 'What\'s Your PoiSIN?',
-  ends: '2021-08-04',
-  units: 'Sin Squadron',
-  notes: 'Create a drink after yourself or Sin Squadron, and provide the ingredients and possibly even a photo or graphic of the drink.',
-  highlight: true,
+  id: '3433',
+  name: 'CallSIGn for Gundark',
+  ends: '2022-08-31',
+  units: 'Sigma Squadron',
+  notes: 'Sigma Squadron\'s beloved pet Gundark is nameless! Your job is to come up with one that is suitable.',
+  highlight:true
 }, {
-  id: '3286',
-  name: 'Riddles of the Jawa',
-  ends: '2022-12-31',
-  units: 'ISD-II Warrior',
-  notes: 'Every week, RA Zekk will include a new puzzle designed by LT WarperJawa in the Warrior report. The first pilot of Wing II to return a fully correct puzzle to me will receive 5 points, the second will receive 4 points, and the third will receive 3 points.',
+  id: '3431',
+  name: 'Sigma Squadrons Vacation BINGO',
+  ends: '2022-08-31',
+  units: 'Sigma Squadron',
+  notes: 'Sigma\'s pilots will be tasked with completing a bingo card on a set of planets from the Star Wars universe as they take a well earned break, on vacation!',
+  highlight:true
 }, {
-  id: '3266',
-  name: 'Trivia Grand Tour: Season Six',
-  ends: '2021-07-26',
+  id: '3413',
+  name: 'Warrior\'s Ace Pilot',
+  ends: '2022-08-31',
+  units: 'ISDII Warrior',
+  notes: 'Achieve the highest score in a Star Wars Squadrons Dogfight.',
+}, {
+  id: '3389',
+  name: 'Signal Scramble Infection',
+  ends: '2022-08-27',
+  units: 'ISDII Warrior',
+  notes: 'Warrior Commodore has tasked the Warrior to make up phrases for the letter combinations and polling the fleet to determine which is the most likely.',
+}, {
+  id: '3418',
+  name: 'TIE Fighter Mineracing!',
+  ends: '2022-08-31',
   units: 'Entire TC',
+  notes: 'Pilots will enter the TIE Fighter game combat chamber and load TIE campaign Battle 5, Mission 1 mineclearing. Upon arrival in the combat area, the pilot will immediately activate their in-flight video recorder and destroy 18 space mines and four containers ',
 }, {
-  id: '3297',
-  name: 'Guess the Pilot!',
-  ends: '2021-08-30',
+  id: '3417',
+  name: 'Deal me in!',
+  ends: '2022-08-31',
   units: 'Entire TC',
-  notes: 'Every week you will be presented with five uniforms. You have to guess to which pilot that uniform belongs to.'
+  notes: 'Play as many games of Pazaak as you want, but you may only submit your top 15 screenshots to VA Marenta at marenta@gmail.com.',
 }, {
-  id: '3301',
-  name: 'Crossword Challenge',
-  ends: '2021-09-30',
+  id: '3422',
+  name: 'Rho Squadron Banner',
+  ends: '2022-08-31',
   units: 'Entire TC',
-  notes: 'Every month a new crossword puzzle will be created with a specific theme. Complete the crossword puzzle and email a screenshot to Solohan50@gmail.com.'
+  notes: 'Rho Squadron is in need of a new banner for their squadron profile and reports!',
 }, {
-  id: '3258',
-  name: 'TIE Corps in Battle Season Three',
-  ends: '2021-06-30',
+  id: '3398',
+  name: 'Squadrons Feats of Strength I',
+  ends: '2022-08-31',
   units: 'Entire TC',
-  notes: 'Complete the monthly battles to win as pilot, squadron, and ship.',
-}, {
-  id: '3235',
-  name: 'COO\'s Star Wars Challenge Episode VII - 2021',
-  ends: '2021-12-31',
-  units: 'Entire TC',
-  notes: 'Accumulate the most LoCs or LoSs in Squadrons.',
-}, {
-  id: '3275',
-  name: 'MP Ace of the TIE Corps 2021',
-  ends: '2021-12-31',
-  units: 'Entire TC',
-  notes: 'Pilots earn monthly and yearly medals for the most LoCs earned. Squadrons games not eligible.',
-}, {
-  id: '3276',
-  name: 'COOP Ace of the TIE Corps 2021',
-  ends: '2021-12-31',
-  units: 'Entire TC',
-  notes: 'Pilots earn monthly and yearly medals for the most LoSs earned.',
-}, {
-  id: '3240',
-  name: 'SP Ace of the TIE Corps 2021',
-  ends: '2021-12-31',
-  units: 'Entire TC',
-  notes: 'Pilots earn monthly and yearly medals for the most single player missions played.',
-}, {
-  id: '3154',
-  name: 'The TIE Pilot Podcast',
-  ends: '2021-12-31',
-  units: 'Entire TC',
+  notes: 'Complete as many levels objectives as you can in Star Wars Squadorns. There are EIGHT feats of strength with increasing difficulty. Settings: Squadrons, Fly Solo FB vs AI (with AI pilots ON) Duration: 30 mins Map: Yavin',
 }];
 
 // TODO confirm
@@ -125,90 +85,84 @@ const ACTIVITY = {
   // Wreckage
   55962: {
     communication: 'Email, Discord',
-    flightActivity: 'Star Conflict PvE, Cadet Cup League, Starcross Fighter League.',
-    otherActivity: 'Guess the Pilot, Trivia Grand Tour.',
-    notes: '',
+    flightActivity: 'SC, SWS',
+    otherActivity: 'Signal Scramble Infection',
+    notes: 'Working on my TCiB mission currently',
   },
-
-  // Coremy Jertese
-  7782: {
-    communication: 'Discord',
-    flightActivity: 'PvE Flying',
-    otherActivity: '',
-    notes: 'Thank you for helping out in Imperial Storm',
-  },
-
-  // Commander Kazraran
-  56002: {
-    communication: 'Discord',
-    flightActivity: 'PvE Flying',
-    otherActivity: '',
-    notes: 'Hope you got a chance to grab a beer while out of town.',
-  },
-
-  // Earnim Branet
-  11276: {
-    communication: 'Email',
-    flightActivity: 'Star Conflict PvE',
-    notes: '',
-  },
-
-  // Mordechi Wolfe
-  481: {
-    communication: 'Email, Discord',
-    flightActivity: 'Star Conflict PvE',
-    otherActivity: '',
-    notes: 'Way to help out in Imperial Storm',
-  },
-
-  // Kane Polybius
-  56085: {
-    communication: 'Discord',
-    flightActivity: '',
-    otherActivity: 'Journal Entry',
-    notes: '',
-  },
-
-  // Favdaukar
-  11336: {
+  // Ayre
+  56266: {
     communication: 'Discord',
     flightActivity: '',
     otherActivity: '',
-    notes: 'Keep powering through those exams',
+    notes: 'Hope you had a great vacation. Time to get back t blowing up Rebels!',
   },
-
-
-
-  // SkyShadow
-  6958: {
-    communication: 'Email, Discord',
-    flightActivity: 'Star Conflict PvE',
-    otherActivity: 'Guess the Pilot, Trivia Grand Tour, Crossword Challenge, TTT3 Debugging, Writing a new script for quickly uploading single player PvE/PvP screenshots with a kill count.  ',
-    notes: 'Thanks for all the time and dedication you put into this last battle, you even inspired me to get out there and fly more.',
-  },
-
-  // AlexanderK9
-  56110: {
+  // Flax Rogers
+  56344: {
     communication: 'Discord',
-    flightActivity: 'Star Conflict PvE',
-    otherActivity: '',
-    notes: 'Good job earning several Legion of Skirmishes. Your promotion to full Lieutenat should be approved any day now. ',
-  },
-
-  // Robert Hogan
-  55859: {
-    communication: 'Email, Discord',
     flightActivity: '',
-    otherActivity: 'IS2 Team Captain duties',
-    notes: 'Ready for your next move in Imperial Storm, Major.',
+    otherActivity: '',
+    notes: 'Lets get you promoted to LT soon',
   },
 
-  // Exar Kit
-  5243: {
+  // Chorok Kim
+  56383: {
     communication: 'Discord',
-    flightActivity: 'Star Conflict PvE',
+    flightActivity: '',
+    notes: 'We hope to see you in the skies soon',
+  },
+
+  // JetMech
+  55761: {
+    communication: 'Email, Discord',
+    flightActivity: 'BF2, SWS, TC Battles ',
     otherActivity: '',
-    notes: 'It was great seeing you out there flying again, you still got it General. ',
+    notes: 'Glad to have you be my side',
+  },
+
+
+  // Killnobi McGee
+  56365: {
+    communication: 'None',
+    flightActivity: '',
+    otherActivity: '',
+    notes: 'Have not heard from you. please reach out.',
+  },
+
+
+
+  // Billy Lee
+  56358: {
+    communication: 'Discord',
+    flightActivity: '',
+    otherActivity: '',
+    notes: 'Have not heard from you. please reach out.',
+  },
+
+
+    // Flik Metis
+    56378: {
+      communication: 'Discord',
+      flightActivity: '',
+      otherActivity: '',
+      notes: 'Welcome to Sigma!',
+    },
+
+
+
+  // randyrumrnr
+  55758: {
+    communication: 'Discord',
+    flightActivity: 'TC Battles, PvE Flying',
+    otherActivity: 'Signal Scramble Infection',
+    notes: 'Thank you for running those comps!',
+  },
+
+  // Mark Schueler
+  4182: {
+    communication: 'Discord',
+    flightActivity: '',
+    otherActivity: '',
+    notes: 'There are some TCIB orders with your name on it',
   },
 };
 
@@ -241,59 +195,37 @@ export default function Report({ activityData }) {
 
       <Intro showUniform>
 
-        <center><h4>Squadron Commander's Speech</h4></center>
+        <center><h4><span style={{ color: "#401562" }}>Squadron Commander's Speech</span></h4></center>
         <p>
-        Good Morning, Good Afternoon, or Good Evening Sinners... Wherever you are. This last week has 
-        been crazy, especially the previous three days. As you all know we had entered our first battle 
-        of Imperial Storm with The Hammer. The Battle of Bunduki will go down as one of the bloodiest 
-        battles of history. The Warrior fleet was outnumbered but that did not stop us from putting up 
-        one helluva fight.  While we may end up losing the battle due to having a smaller fleet, we caused 
-        a lot of damage to the Hammer, and the war is far from over. The Warrior also made a statement that 
-        we will not be defeated easily, no matter the disadvantage. I really need to emphasis how happy I am 
-        from the performance that our Squadron did in this battle. Over 830 Legions came from our squad alone, 
-        that is awesome. Thank you again to everyone who contributed to our efforts. 
+        Welcome to the inaugural Squadron Commander Report, Sigma Squad. I'm happy to be here and contribute to restoring Sigma to its former greatness. 
+        We have a lot of work ahead of us, but fortunately, we have two other excellent pilots who also make amazing leaders. I'm thrilled to have CM JetMech 
+        as my SQXO and LC randyrumrnr as a Flight Leader. I have no doubt that we can launch Sigma and take off quickly with their assistance. Everyone has a 
+        lot of Rebel ships to destroy.
         </p>
-
-        <p>Today is CM SkyShadows birthday, so make sure to wish him a very Happy Birthday and buy him a beer 
-          while you are at it.
-        </p>
-
-        <p>
-        SL Caleb Watson was recently sent to the reserves due to non comunication and inactivity. However as you may 
-        all already know we have a new member in our squad, Sub-Lieutenant AlexanderK9. He has wasted no time flying with a few of us in Star Conflict, 
-        and has earned several Legion of Skirmishes. His paperwork for his promotion to Full Lieutenant is in the mail. If you need a wingman, hes your guy. 
-        </p>
-
-        <p>Just a reminder, my first Sin competitioin "What's your PoiSIN?" is live.
-        </p>
-
-        <i>	"Sinfire Cantina has just opened up on the ISD Warrior and it needs some new drink ideas. It can’t just serve Zekks 
-          on the Beach and Sinfire shots all day, we need some variety. Create a drink after yourself or Sin Squadron, and provide 
-          the ingredients and possibly even a photo or graphic of the drink. Zekk and I will judge based on creativity, details, 
-          and graphics provided. IS-SR for 1st place, IS-BR for 2nd place and IS-CR for all other pilots who provide a drink name, 
-          ingredients, and a graphic."</i>
-
+		    <p>There are many fresh faces here. Many of you are not only new to Sigma, but also to The Emperor's Hammer. No worries, it may seem like a lot at first, 
+          but in the end, this is a place where flying, gaming, and having fun are the only things that matter. Do not hesitate to contact me, CM JetMech, or LC 
+          Randyrumrnr if you have any questions at all. We are all eager to assist you and make your time at the Emperor's Hammer as enjoyable as we can.</p>
+        <p>We have many competitions and ideas brewing here in Sigma. Once all the dust settles and everyone is ready for launch we will be getting those under way. So keep an eye out.  </p>
+        <p>Lastly, I have finished the MSE for the month of July. Many of you were either a part of another squadron or were too new to engage in any activity. Dont worry, we still have plenty
+           of time to earn a medal for the month of August. Reach out to me if you have any questions about what an MSE is, and I'll be happy to clarify.  Until then, get out and kill some Rebels!</p>
 
 
       </Intro>
 
       <Orders missions={orders}>
 
-                <center><h3>Squadron News</h3></center>
-      <ul>
-                <li>Welcome to the squad SL(soon to be LT) AlexanderK9</li><br></br>
-                <li>Happy Birthday SkyShadow!</li><br></br>
-                <li>New compititon "What's your PoiSIN?" is live. DM me on Discord or email submissions to ehtc.wreckage@gmail.com by August 4th.</li><br></br>
-                <li>A new Sin patch is in the works. I took your feedback on the initial version, and hope to have it 
-                  finalized in the coming weeks. It will continue the legacy of Sin having the best patch in the fleet.</li><br></br>
-                <li>Sin Trivia will be returning next month after Trivia Grand Tour: Season Six wraps up</li><br></br>
-                  </ul>
-                <center><h3>Fleet News</h3></center>
+                <center><h3><span style={{ color: "#401562" }}>Squadron News</span></h3></center>
         <ul>
-            	<li>Imperial Storm has begun! Our first battle was a blood bath,but we put up a fight.</li><br></br>
-				      <li>Check out LC Genie's  <a href="https://tc.emperorshammer.org/competitions.php?id=3297"><strong>Guess the Pilot by their Uniform Competition.</strong></a>
-				       Link to Week 1  <a href="https://tc.emperorshammer.org/timetest.php?testid=554990"><strong>here.</strong> </a></li><br></br>
-         	  	<li>The sixth edition of the Trivia Grand Tour competition, run by the TCCOM, wraps up this month.</li>
+                <li>Sigma Squadron has been activated!</li><br></br>
+                <li>Congrats to CM JetMech on his SQXO promotion.  </li><br></br>
+                <li>Also congrats to LC randyrumrnr for becoming FL of FLight III</li><br></br>
+                <li>Sigma Squadron competitions are coming, until then go complete some Warrior and TC comps.</li><br></br>
+        </ul>
+                <center><h3><span style={{ color: "#401562" }}>Fleet News</span></h3></center>
+        <ul>
+            	<li>SQXO will now be a primary position taking the place of the Flight Leader 2-1 position in every squadron.</li><br></br>
+                <li>CM Sylas "Professor" Pitt has been appointed the new Training Officer  </li><br></br>
+                <li>LC Robert Hogan has been selected to be a TOA   </li><br></br>
         </ul>
 
       </Orders>
@@ -308,13 +240,11 @@ export default function Report({ activityData }) {
       />
 
       <Closing>
-      One of the benifits of taking over the squadron right when Imperial Storm started was that I got the chance 
-      to fly with many of you and other Warrior pilots for the first time. This week was crazy, but still I had alot fun. 
-      Thanks for all the games, I look forward to going into battle with you all again.
-
-
-      <p>For Sin!</p>
-      <p>CM Wreckage</p>
+      I will conclude by saying that I am happy to be back. I believe this squad is coming together nicely. We are getting ready to accomplish something wonderful. 
+      RTF will arrive soon, and when it does, Sigma will be prepared. Don't forget you can always shoot me DM in Discord or an email if you need anything.   
+  
+      <p>MAJ Wreckage</p>
+      <i><span style={{ color: "#bb0a1e" }}>"Let the sky fall"</span></i>
       </Closing>
 
       <Footer />

@@ -14,9 +14,9 @@ export default function Dates({
   return (
     <Card>
       <img
-        src="https://tc.emperorshammer.org/patch.php?id=64"
+        src="https://tc.emperorshammer.org/patch.php?id=16"
         style={{ float: 'right' }}
-        alt="Sin Squadron logo, Red Skul TIE Pilot Hemlmet with wings."
+        alt="Sigma Squadron Patch"
         width="120"
       />
 
