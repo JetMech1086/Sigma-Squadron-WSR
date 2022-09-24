@@ -15,7 +15,7 @@ import Link from '../../components/link';
 import config from '../../config';
 import loadActivityData from '../../src/loadSquadronActivityData';
 
-const reportNumber = 2;
+const reportNumber = 3;
 const startDate = '2022-08-08';
 const endDate = '2022-08-028';
 const submissionDate = '2022-08-28';
@@ -85,47 +85,48 @@ const ACTIVITY = {
   // Wreckage
   55962: {
     communication: 'Email, Discord',
-    flightActivity: 'None',
-    otherActivity: 'Signal Scramble Infection',
-    notes: 'Working on my TCiB mission currently',
+    flightActivity: 'LoC\'s',
+    otherActivity: 'Squadron Report submitted',
+    notes: 'ISM, IS-SW, and LoC awarded',
   },
   // Ayre
   56266: {
     communication: 'Discord',
-    flightActivity: '',
-    otherActivity: '',
-    notes: 'Hope you had a great vacation. Time to get back to blowing up Rebels!',
+    flightActivity: 'None',
+    otherActivity: 'None',
+    notes: '',
   },
   // Pmoneydaman
   56416: {
     communication: 'Discord',
-    flightActivity: '',
-    otherActivity: '',
-    notes: 'Lets get you promoted to LT soon',
+    flightActivity: 'LoC\'s and LoS\'s',
+    otherActivity: 'TCCORE passed, Updated INPR',
+    notes: 'Promoted to LT, nice work! Welcome to Sigma!',
   },
 
   // Chorok Kim
   56383: {
     communication: 'Discord',
     flightActivity: '',
-    notes: 'We hope to see you in the skies soon',
+    otherActivity: 'IS-BR Awarded, Signal Scramble Infection',
+    notes: 'Promoted to LT, congratulations! Welcome to Sigma!',
   },
 
   // JetMech
   55761: {
     communication: 'Email, Discord',
-    flightActivity: 'BF2, SWS, TC Battles ',
-    otherActivity: '',
-    notes: 'Glad to have you be my side',
+    flightActivity: 'LoC, LoS\'s',
+    otherActivity: 'Empire at War research committee, Signal Scramble Infection',
+    notes: 'Amped for RtF!',
   },
 
 
   // Rion Spencer
   56408: {
     communication: 'Discord',
-    flightActivity: 'SWS',
-    otherActivity: '',
-    notes: '',
+    flightActivity: 'LoC\'s',
+    otherActivity: 'Update INPR',
+    notes: 'Promoted to LT, congratulations! Welcome to Sigma!',
   },
 
 
@@ -133,18 +134,18 @@ const ACTIVITY = {
   // Hector Von Ricmore
   56410: {
     communication: 'Discord',
-    flightActivity: 'SWS',
-    otherActivity: '',
-    notes: '',
+    flightActivity: 'LoC\'s, LoS\'s, MoI\'s',
+    otherActivity: 'TCCORE Passed, INPR Updated',
+    notes: 'Promoted to LT, congratulations! Welcome to Sigma',
   },
 
 
     // Flik Metis
     56378: {
       communication: 'Discord',
-      flightActivity: 'SWS',
-      otherActivity: '',
-      notes: 'Great job getting promoted',
+      flightActivity: 'LoC\'s IS-BW Awarded',
+      otherActivity: 'TCCORE Passed, CallSIGn for Gundark',
+      notes: 'Love the activity, keep up the good work!',
     },
 
 
@@ -152,9 +153,9 @@ const ACTIVITY = {
   // randyrumrnr
   55758: {
     communication: 'Discord',
-    flightActivity: 'BF2, SWS',
-    otherActivity: 'Signal Scramble Infection, Runng 2 competitions.',
-    notes: 'Thank you for running those comps!',
+    flightActivity: 'LoC\'s, LoS\'s, IS-BR Awarded',
+    otherActivity: 'Signal Scramble Infection, Runng 2 competitions. CallSIGn for Gundark',
+    notes: 'Love the competitions!  Thank you!',
   },
 
   // Mark Schueler
@@ -176,9 +177,9 @@ const ACTIVITY = {
   //Konar Auryus-Saas
   56417:  {
     communication: 'Discord',
-    flightActivity: 'SWS',
-    otherActivity: '',
-    notes: '',
+    flightActivity: 'LoC\'s, LoS\'s',
+    otherActivity: 'INPR Updated',
+    notes: 'Congratulations on the promotion to LT!  Welcome to Sigma!',
   }
 };
 
@@ -211,14 +212,14 @@ export default function Report({ activityData }) {
 
       <Intro showUniform>
 
-        <center><h4><span style={{ color: "#401562" }}>Squadron Commander's Speech</span></h4></center>
+        <center><h4><span style={{ color: "#401562" }}>Squadron XO's Speech</span></h4></center>
         <p>
-        Hey Sigma, hope all is well. I know this month has been kind of a crazy month with the whole squad getting situated. We are off 
-        and running and even had a SL get promoted recently. Congrats to our very own now LT Flik Metis. Get Flik a drink the next to you fly with him.
+        Greetings Pilots!  We've had a busy month or so since our last report.  We welcome Pmoneydaman, Rion Spencer, Hector Von Ricmore, Mr_Babo and Konar Auryus-Saas to Sigma Squadron.
+        In the same breath we congratulate Pmoneydaman, Chorok Kim, Rion Spencer, Hector Von Ricmore and Konar Auryus-Saas on their promotions to LT, way to go!
         </p>
-		    <p>We also have some Sigma Comps going on. Check out the competitions section down below and get a submission in.</p>
-        <p>August is almost over so get those last minute MSE points in so you can get yourself a nice shiny medal. </p>
-        <p>Prepare yourselves,  RTF is coming.</p>
+		    <p>We also have some Sigma Comps wrapping up soon, so get your submissions in ASAP!</p>
+        <p>September is coming to a close, so lets make sure we get all the MSE point to which we're entitled.  Let's get some medals pinned on some of those fresh uniforms! </p>
+        <p>RTF begins in just shy of a week.  This is our biggest fleet-wide competition of the year and I know that Sigma is going to crush it!  </p>
 
 
       </Intro>
@@ -227,14 +228,14 @@ export default function Report({ activityData }) {
 
                 <center><h3><span style={{ color: "#401562" }}>Squadron News</span></h3></center>
         <ul>
-                <li>Conrats to LT Flik Metis on promotion</li><br></br>
+                <li>Conrats to Pmoneydaman, Chorok Kim, Rion Spencer, Hector Von Ricmore, and Konar Auryus-Saas.</li><br></br>
                 <li>Get you comp submissions in  </li><br></br>
         </ul>
                 <center><h3><span style={{ color: "#401562" }}>Fleet News</span></h3></center>
         <ul>
             	<li>TCiB is live, fly you fools</li><br></br>
-                <li>Congrats to Warriors own Westric Davalorn and SkyShadow on their well deserved promotions  </li><br></br>
-                <li>RTF will be here very soon  </li><br></br>
+                <li>Congratulations to LC Talon Jade on his promotion to CMDR of Sin Squadron!  </li><br></br>
+                <li>RTF starts 10/1, lets get pumped! </li><br></br>
         </ul>
 
       </Orders>
