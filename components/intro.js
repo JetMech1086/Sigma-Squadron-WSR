@@ -13,7 +13,7 @@ export default function Intro({ children, showUniform = true }) {
 
       { showUniform && (
         <Link
-          href={`https://tc.emperorshammer.org/record.php?pin=55962&type=profile`}
+          href={`https://tc.emperorshammer.org/record.php?pin=55761&type=profile`}
           target="_blank"
           rel="noreferrer"
         >

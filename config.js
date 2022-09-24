@@ -14,11 +14,11 @@ export default {
     width: 512,
   },
   cmdr: {
-    intro: 'From The Desk of Wreckage',
-    name: 'Wreckage',
-    title: 'MAJ Wreckage',
-    pin: 55962,
-    email: 'ehtc.wreckage@gmail.com',
+    intro: 'From the SQXO\'s Mop Closet',
+    name: 'JetMech',
+    title: 'CM JetMech',
+    pin: 55761,
+    email: 'ehtcjetmech@gmail.com',
   },
   wc: {
     name: 'Gilbert H. Frown',
