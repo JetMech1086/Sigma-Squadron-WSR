@@ -18,7 +18,7 @@ import loadActivityData from '../../src/loadSquadronActivityData';
 const reportNumber = 3;
 const startDate = '2022-08-28';
 const endDate = '2022-09-24';
-const submissionDate = '2022-09-24';
+const submissionDate = '2022-09-25';
 
 const citations = [
 
