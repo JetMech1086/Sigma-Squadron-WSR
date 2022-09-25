@@ -109,7 +109,7 @@ const ACTIVITY = {
     communication: 'Discord',
     flightActivity: '',
     otherActivity: 'IS-BR Awarded, Signal Scramble Infection',
-    notes: 'Promoted to LT, congratulations! Welcome to Sigma!',
+    notes: 'Promoted to LT, congratulations!',
   },
 
   // JetMech
