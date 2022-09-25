@@ -116,7 +116,7 @@ const ACTIVITY = {
   55761: {
     communication: 'Email, Discord',
     flightActivity: 'LoC, LoS\'s',
-    otherActivity: 'Empire at War research committee, Signal Scramble Infection',
+    otherActivity: 'Sigma Vacation Bingo, CallSIGn for Gundark, Signal Scramble Infection',
     notes: 'Amped for RtF!',
   },
 
