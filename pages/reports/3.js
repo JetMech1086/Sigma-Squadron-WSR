@@ -229,7 +229,7 @@ export default function Report({ activityData }) {
                 <center><h3><span style={{ color: "#401562" }}>Squadron News</span></h3></center>
         <ul>
                 <li>Conrats to Pmoneydaman, Chorok Kim, Rion Spencer, Hector Von Ricmore, and Konar Auryus-Saas.</li><br></br>
-                <li>Get you comp submissions in  </li><br></br>
+                <li>Get your comp submissions in  </li><br></br>
         </ul>
                 <center><h3><span style={{ color: "#401562" }}>Fleet News</span></h3></center>
         <ul>
