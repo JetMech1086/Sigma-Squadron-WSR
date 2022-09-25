@@ -14,7 +14,7 @@ export default {
     width: 512,
   },
   cmdr: {
-    intro: 'From the SQXO\'s Mop Closet',
+    intro: 'From the desk of CM JetMech',
     name: 'JetMech',
     title: 'CM JetMech',
     pin: 55761,

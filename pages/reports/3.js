@@ -16,9 +16,9 @@ import config from '../../config';
 import loadActivityData from '../../src/loadSquadronActivityData';
 
 const reportNumber = 3;
-const startDate = '2022-08-08';
-const endDate = '2022-08-028';
-const submissionDate = '2022-08-28';
+const startDate = '2022-08-28';
+const endDate = '2022-09-24';
+const submissionDate = '2022-09-24';
 
 const citations = [
 
@@ -31,53 +31,53 @@ const orders = [];
 const competitions = [{
   id: '3433',
   name: 'CallSIGn for Gundark',
-  ends: '2022-08-31',
+  ends: '2022-10-01',
   units: 'Sigma Squadron',
   notes: 'Sigma Squadron\'s beloved pet Gundark is nameless! Your job is to come up with one that is suitable.',
   highlight:true
 }, {
   id: '3431',
   name: 'Sigma Squadrons Vacation BINGO',
-  ends: '2022-08-31',
+  ends: '2022-10-01',
   units: 'Sigma Squadron',
   notes: 'Sigma\'s pilots will be tasked with completing a bingo card on a set of planets from the Star Wars universe as they take a well earned break, on vacation!',
   highlight:true
 }, {
-  id: '3413',
-  name: 'Warrior\'s Ace Pilot',
-  ends: '2022-08-31',
+  id: '3435',
+  name: 'Protect the COM!',
+  ends: '2022-09-30',
   units: 'ISDII Warrior',
-  notes: 'Achieve the highest score in a Star Wars Squadrons Dogfight.',
+  notes: 'Earn LoC\'s and LoS\'s with VA Marenta!',
 }, {
-  id: '3389',
+  id: '3441',
   name: 'Signal Scramble Infection',
-  ends: '2022-08-27',
+  ends: '2022-12-31',
   units: 'ISDII Warrior',
   notes: 'Warrior Commodore has tasked the Warrior to make up phrases for the letter combinations and polling the fleet to determine which is the most likely.',
 }, {
-  id: '3418',
-  name: 'TIE Fighter Mineracing!',
-  ends: '2022-08-31',
+  id: '3416',
+  name: 'Emperor\'s Hammer at War!',
+  ends: '2022-09-30',
   units: 'Entire TC',
-  notes: 'Pilots will enter the TIE Fighter game combat chamber and load TIE campaign Battle 5, Mission 1 mineclearing. Upon arrival in the combat area, the pilot will immediately activate their in-flight video recorder and destroy 18 space mines and four containers ',
+  notes: 'Complete a 2v2 against 2 Hard level AI in Empire at War for the fastest time!',
 }, {
-  id: '3417',
-  name: 'Deal me in!',
-  ends: '2022-08-31',
+  id: '3436',
+  name: 'Design the Ship and Squadron Mascots',
+  ends: '2022-11-30',
   units: 'Entire TC',
-  notes: 'Play as many games of Pazaak as you want, but you may only submit your top 15 screenshots to VA Marenta at marenta@gmail.com.',
+  notes: 'Create a graphic for a squadron which must include its patch and mascot in some capacity.',
 }, {
-  id: '3422',
-  name: 'Rho Squadron Banner',
-  ends: '2022-08-31',
+  id: '3442',
+  name: 'TIE Corps in Battle Season 5',
+  ends: '2022-12-15',
   units: 'Entire TC',
-  notes: 'Rho Squadron is in need of a new banner for their squadron profile and reports!',
+  notes: 'Current assignments are TIE-TC 171, XvT-TC 25, and XWA-TC 43',
 }, {
-  id: '3398',
-  name: 'Squadrons Feats of Strength I',
-  ends: '2022-08-31',
+  id: '3440',
+  name: 'The Challenge with Words',
+  ends: '2022-12-31',
   units: 'Entire TC',
-  notes: 'Complete as many levels objectives as you can in Star Wars Squadorns. There are EIGHT feats of strength with increasing difficulty. Settings: Squadrons, Fly Solo FB vs AI (with AI pilots ON) Duration: 30 mins Map: Yavin',
+  notes: 'Solve the monthly word search puzzles posted by VA Marenta.',
 }];
 
 // TODO confirm
@@ -250,11 +250,10 @@ export default function Report({ activityData }) {
       />
 
       <Closing>
-      In closing, there are a few of you we have been trying to reach. We understand that real 
-      life gets busy, especially right now with school starting back up and everyone being tied up in work. All we 
-      ask is that you communicate with us.  Remember to reach out to myself or your flight leader if you have any questions or concerns.  
+      I can't tell everyone how excited I am that we've got a full house heading into Raise the Flag!  It's going to be an intense month long competition, so don't
+      forget to pace yourselves and hydrate.  It's a marathon not a sprint!  Long live the Empire!  
   
-      <p>MAJ Wreckage</p>
+      <p>CM JetMech</p>
       <i><span style={{ color: "#bb0a1e" }}>"Let the sky fall"</span></i>
       </Closing>
 
