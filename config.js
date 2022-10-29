@@ -14,9 +14,9 @@ export default {
     width: 512,
   },
   cmdr: {
-    intro: 'From the desk of CM JetMech',
+    intro: 'From the desk of CPT JetMech',
     name: 'JetMech',
-    title: 'CM JetMech',
+    title: 'CPT JetMech',
     pin: 55761,
     email: 'ehtcjetmech@gmail.com',
   },

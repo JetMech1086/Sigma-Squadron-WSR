@@ -15,10 +15,10 @@ import Link from '../../components/link';
 import config from '../../config';
 import loadActivityData from '../../src/loadSquadronActivityData';
 
-const reportNumber = 3;
-const startDate = '2022-08-28';
-const endDate = '2022-09-24';
-const submissionDate = '2022-09-25';
+const reportNumber = 4;
+const startDate = '2022-09-25';
+const endDate = '2022-10-29';
+const submissionDate = '2022-10-29';
 
 const citations = [
 
@@ -29,38 +29,33 @@ const citationsChange ='+0';
 const orders = [];
 
 const competitions = [{
-  id: '3433',
-  name: 'CallSIGn for Gundark',
-  ends: '2022-10-01',
-  units: 'Sigma Squadron',
-  notes: 'Sigma Squadron\'s beloved pet Gundark is nameless! Your job is to come up with one that is suitable.',
+  id: '3469',
+  name: 'Logo for Airlock Podcast',
+  ends: '2022-11-29',
+  units: 'TIE Corps',
+  notes: 'Design a logo for EH\s own Airlock Podcast, hosted by MAJ LegionX.  The logo needs to be square between 1400x1400 and 3000x3000 pixels. I talso needs to be recognizable when displayed as a smaller icon in a podcast directory',
   highlight:true
 }, {
-  id: '3431',
-  name: 'Sigma Squadrons Vacation BINGO',
-  ends: '2022-10-01',
-  units: 'Sigma Squadron',
-  notes: 'Sigma\'s pilots will be tasked with completing a bingo card on a set of planets from the Star Wars universe as they take a well earned break, on vacation!',
+  id: '3461',
+  name: 'A Banner for the Challenge Battlegroup',
+  ends: '2022-11-30',
+  units: 'TIE Corps',
+  notes: 'The Challenge Battlegroup needs an updated banner now tha tit has activated Raven Squadron.  Feel free to include the MC-40 Roost, any ships from the OOB, or anything else from teh Challenge\'s history!',
   highlight:true
 }, {
-  id: '3435',
-  name: 'Protect the COM!',
-  ends: '2022-09-30',
-  units: 'ISDII Warrior',
-  notes: 'Earn LoC\'s and LoS\'s with VA Marenta!',
+  id: '3462',
+  name: 'A Patch for the Challenge Battlegroup',
+  ends: '2022-11-30',
+  units: 'TIE Coprs',
+  notes: 'The current patch used when posting Challenge announcements is oudated - it only shows the Challenge, a beauty though she is, and was created by Silwar in a competition from years past.  Develop a new patch to represent the new and evolved Challenge!',
 }, {
   id: '3441',
   name: 'Signal Scramble Infection',
   ends: '2022-12-31',
   units: 'ISDII Warrior',
   notes: 'Warrior Commodore has tasked the Warrior to make up phrases for the letter combinations and polling the fleet to determine which is the most likely.',
-}, {
-  id: '3416',
-  name: 'Emperor\'s Hammer at War!',
-  ends: '2022-09-30',
-  units: 'Entire TC',
-  notes: 'Complete a 2v2 against 2 Hard level AI in Empire at War for the fastest time!',
-}, {
+}, 
+ {
   id: '3436',
   name: 'Design the Ship and Squadron Mascots',
   ends: '2022-11-30',
@@ -87,7 +82,7 @@ const ACTIVITY = {
     communication: 'Email, Discord',
     flightActivity: 'LoC\'s, LoS\'s',
     otherActivity: '',
-    notes: 'ISM, IS-BR, IAR, MoC-boc Awarded',
+    notes: 'ISM, IS-BR, IAR, MoC-boc Awarded, nice work during RtF!',
   },
   // Ayre
   56266: {
@@ -136,7 +131,7 @@ const ACTIVITY = {
     communication: 'Discord',
     flightActivity: 'LoC\'s',
     otherActivity: '',
-    notes: 'MoC-boc, PC, CoB Awarded, nice work!',
+    notes: 'MoC-boc, PC, CoB Awarded, nice work during RtF!',
   },
 
 
@@ -144,8 +139,8 @@ const ACTIVITY = {
     56378: {
       communication: 'Discord',
       flightActivity: 'LoC\'s, LoS\'s',
-      otherActivity: '',
-      notes: 'MoC-boc, MoC-soc, PC, IS-SR, CoB Awarded, nice work during RtF!',
+      otherActivity: 'Promoted to 3rd Flight Echelon!',
+      notes: 'MoC-boc, MoC-soc, PC, IS-SR, CoB Awarded, Promoted to LCM!  Nice work during RtF!',
     },
 
 
@@ -179,7 +174,7 @@ const ACTIVITY = {
     communication: 'Discord',
     flightActivity: 'LoC\'s',
     otherActivity: '',
-    notes: 'MoC-boc, CoB, PC Awarded, nice job during RtF',
+    notes: 'MoC-boc, CoB, PC Awarded, nice job during RtF!',
   }
 };
 
@@ -228,14 +223,14 @@ export default function Report({ activityData }) {
 
                 <center><h3><span style={{ color: "#401562" }}>Squadron News</span></h3></center>
         <ul>
-                <li>Conrats to Pmoneydaman, Chorok Kim, Rion Spencer, Hector Von Ricmore, and Konar Auryus-Saas.</li><br></br>
+                <li>Conratulations to LCM Flik Metis on your recent promotion!</li><br></br>
                 <li>Get your comp submissions in  </li><br></br>
         </ul>
                 <center><h3><span style={{ color: "#401562" }}>Fleet News</span></h3></center>
         <ul>
             	<li>TCiB is live, fly you fools</li><br></br>
-                <li>Congratulations to LC Talon Jade on his promotion to CMDR of Sin Squadron!  </li><br></br>
-                <li>RTF starts 10/1, lets get pumped! </li><br></br>
+                <li> RtF is getting ready to come to a close!  If you still have some flying in you, go out there and put some points on the board! </li><br></br>
+                <li> </li><br></br>
         </ul>
 
       </Orders>
@@ -250,8 +245,8 @@ export default function Report({ activityData }) {
       />
 
       <Closing>
-      I can't tell everyone how excited I am that we've got a full house heading into Raise the Flag!  It's going to be an intense month long competition, so don't
-      forget to pace yourselves and hydrate.  It's a marathon not a sprint!  Long live the Empire!  
+      As RtF comes to a close I find myself lucky enough to be the SQXO of Sigma.  I am so incredibly proud of the work that was done this month.  For those of you who haven't put any points on the board, we still have a day and a half or so, get out there and fly!
+      I couldn't be more excited to see what the next few months bring as we find our footing as a new squadron.  Love live the Empire!  
   
       <p>CM JetMech</p>
       <i><span style={{ color: "#bb0a1e" }}>"Let the sky fall"</span></i>
