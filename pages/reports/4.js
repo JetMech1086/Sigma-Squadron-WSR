@@ -34,14 +34,14 @@ const competitions = [{
   ends: '2022-11-29',
   units: 'TIE Corps',
   notes: 'Design a logo for EH\s own Airlock Podcast, hosted by MAJ LegionX.  The logo needs to be square between 1400x1400 and 3000x3000 pixels. I talso needs to be recognizable when displayed as a smaller icon in a podcast directory',
-  highlight:true
+  highlight:false
 }, {
   id: '3461',
   name: 'A Banner for the Challenge Battlegroup',
   ends: '2022-11-30',
   units: 'TIE Corps',
   notes: 'The Challenge Battlegroup needs an updated banner now tha tit has activated Raven Squadron.  Feel free to include the MC-40 Roost, any ships from the OOB, or anything else from teh Challenge\'s history!',
-  highlight:true
+  highlight:false
 }, {
   id: '3462',
   name: 'A Patch for the Challenge Battlegroup',
@@ -209,12 +209,12 @@ export default function Report({ activityData }) {
 
         <center><h4><span style={{ color: "#401562" }}>Squadron XO's Speech</span></h4></center>
         <p>
-        Greetings Pilots!  We've had a busy month or so since our last report.  We welcome Pmoneydaman, Rion Spencer, Hector Von Ricmore, Mr_Babo and Konar Auryus-Saas to Sigma Squadron.
-        In the same breath we congratulate Pmoneydaman, Chorok Kim, Rion Spencer, Hector Von Ricmore and Konar Auryus-Saas on their promotions to LT, way to go!
+        Hello Pilots!  We've had a busy month with RtF in full swing.  Thank you to everyone who put up some numbers this year, we had a very respectable contribution from Sigma Squadron this year!
+
         </p>
-		    <p>We also have some Sigma Comps wrapping up soon, so get your submissions in ASAP!</p>
-        <p>September is coming to a close, so lets make sure we get all the MSE point to which we're entitled.  Let's get some medals pinned on some of those fresh uniforms! </p>
-        <p>RTF begins in just shy of a week.  This is our biggest fleet-wide competition of the year and I know that Sigma is going to crush it!  </p>
+		    <p>I'm looking forward to the next couple of months as we get to know each other in the post RtF landscape.</p>
+        <p>October and RtF are coming to a close, so let's make sure we're getting some numbers up there for those who haven't yet had an opportunity! </p>
+        <p>RTF wraps on Monday at 2359Z, so if you want to get any more activity in, this is the time to do it!  </p>
 
 
       </Intro>
@@ -223,14 +223,12 @@ export default function Report({ activityData }) {
 
                 <center><h3><span style={{ color: "#401562" }}>Squadron News</span></h3></center>
         <ul>
-                <li>Conratulations to LCM Flik Metis on your recent promotion!</li><br></br>
-                <li>Get your comp submissions in  </li><br></br>
+                <li>Congratulations to LCM Flik Metis on your recent promotion!</li><br></br>
         </ul>
                 <center><h3><span style={{ color: "#401562" }}>Fleet News</span></h3></center>
         <ul>
             	<li>TCiB is live, fly you fools</li><br></br>
                 <li> RtF is getting ready to come to a close!  If you still have some flying in you, go out there and put some points on the board! </li><br></br>
-                <li> </li><br></br>
         </ul>
 
       </Orders>
@@ -248,7 +246,7 @@ export default function Report({ activityData }) {
       As RtF comes to a close I find myself lucky enough to be the SQXO of Sigma.  I am so incredibly proud of the work that was done this month.  For those of you who haven't put any points on the board, we still have a day and a half or so, get out there and fly!
       I couldn't be more excited to see what the next few months bring as we find our footing as a new squadron.  Love live the Empire!  
   
-      <p>CM JetMech</p>
+      <p>CPT JetMech</p>
       <i><span style={{ color: "#bb0a1e" }}>"Let the sky fall"</span></i>
       </Closing>
 
